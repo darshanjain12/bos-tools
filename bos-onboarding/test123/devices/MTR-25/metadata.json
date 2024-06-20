@@ -1,0 +1,35 @@
+{
+  "version":"1",
+  "timestamp":"2020-12-08T09:03:43Z",
+  "system":{
+    "location":{
+      "site_name":"UK-LON-BLDNG1",
+      "section":"UK-LON-BLDNG1_RM2",
+      "position":{
+        "x":"10",
+        "y":"10",
+        "z":"10"
+      }
+    },
+    "physical_tag":{
+      "asset":{
+        "guid":"uuid://",
+        "site":"UK-LON-BLDNG1",
+        "name":"MTR-25"
+      }
+    }
+  },
+  "pointset":{
+    "points":{
+      "cooling_water_flowrate_sensor":{
+        "units":"Liters-per-second"
+      },
+      "cooling_coil_energy_sensor":{
+        "units":"Kilojoules"
+      }
+    }
+  },
+  "cloud":{
+    "auth_type":"RS256"
+  }
+}

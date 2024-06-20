@@ -47,12 +47,13 @@ class SiteModel:
 
     # Used to create the "system" and "physical tag" sections.
     VERSION = "udmi.version"
+    DEVICE_VERSION = "udmi.device_version"
     TIMESTAMP = "udmi.timestamp"
     LOCATION_SITE = "udmi.system.location.site"
     LOCATION_SECTION = "udmi.system.location.section"
-    LOCATION_POSITION_X = "udmi.system.location.position.x"
-    LOCATION_POSITION_Y = "udmi.system.location.position.y"
-    LOCATION_POSITION_Z = "udmi.system.location.position.z"
+    #LOCATION_POSITION_X = "udmi.system.location.position.x"
+    #LOCATION_POSITION_Y = "udmi.system.location.position.y"
+    #LOCATION_POSITION_Z = "udmi.system.location.position.z"
     PHYSICAL_TAG_GUID = "udmi.physical_tag.asset.guid"
     PHYSICAL_TAG_SITE = "udmi.physical_tag.asset.site"
     PHYSICAL_TAG_NAME = "udmi.physical_tag.asset.name"
@@ -62,6 +63,12 @@ class SiteModel:
 
     # Used to create the "cloud" section.
     CLOUD_AUTH_TYPE = "udmi.cloud.auth_type"
+    CLOUD_CONNECTION_TYPE = "udmi.cloud.connection"
+
+    # Used to create the "gateway" section.
+    GATEWAY_ID = "udmi.gateway.gateway_id"
+    GATEWAY_PROXY_ID = "udmi.gateway.proxy_ids"
+
  
   class PayloadTypeColumns:
 
@@ -129,20 +136,21 @@ class UDMISiteModelGenerator:
   def _get_version_timestamp_section(self, device):
     return {
       "version": device[self._asset_columns.VERSION],
-      "timestamp": device[self._asset_columns.TIMESTAMP]
+      "timestamp": device[self._asset_columns.TIMESTAMP],
+      "device_version": device[self._asset_columns.DEVICE_VERSION]
     }
 
   def _get_system_section(self, device):
     return {
       "system": {
         "location": {
-          "site_name": device[self._asset_columns.LOCATION_SITE],
+          "site": device[self._asset_columns.LOCATION_SITE],
           "section": device[self._asset_columns.LOCATION_SECTION],
-          "position": {
-            "x": device[self._asset_columns.LOCATION_POSITION_X],
-            "y": device[self._asset_columns.LOCATION_POSITION_Y],
-            "z": device[self._asset_columns.LOCATION_POSITION_Z]
-          }
+          #"position": {
+            #"x": device[self._asset_columns.LOCATION_POSITION_X],
+            #"y": device[self._asset_columns.LOCATION_POSITION_Y],
+            #"z": device[self._asset_columns.LOCATION_POSITION_Z]
+         # }
         },
         "physical_tag": {
           "asset": {
@@ -151,6 +159,14 @@ class UDMISiteModelGenerator:
             "name": device[self._asset_columns.PHYSICAL_TAG_NAME]
           }
         }
+      }
+    }
+  def _get_gateway_section(self, device):
+    return {
+      "gateway": {
+          "gateway_id": device[self._asset_columns.GATEWAY_ID],
+          "proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
+        
       }
     }
 
@@ -178,7 +194,8 @@ class UDMISiteModelGenerator:
   def _get_cloud_section(self, device):
     return {
       "cloud": {
-        "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE]
+        "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
+        "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
       }
     }
 
@@ -203,6 +220,8 @@ class UDMISiteModelGenerator:
         metadata.update(self._get_system_section(device))
         metadata.update(self._get_pointset_section(device))
         metadata.update(self._get_cloud_section(device))
+        metadata.update(self._get_gateway_section(device))
+
 
         os.makedirs(self.OUTPUT_PATH_TEMPLATE.format(name), exist_ok=True)
         self._save_to_json(metadata, self.OUTPUT_FILE_TEMPLATE.format(name))
