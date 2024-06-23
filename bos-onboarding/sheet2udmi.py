@@ -69,6 +69,10 @@ class SiteModel:
     GATEWAY_ID = "udmi.gateway.gateway_id"
     GATEWAY_PROXY_ID = "udmi.gateway.proxy_ids"
 
+    # Used to create the "Local Bacnet Address" section.
+    BACNET_ADDR = "udmi.bacnet_addr"
+
+
  
   class PayloadTypeColumns:
 
@@ -76,6 +80,7 @@ class SiteModel:
     POINTS_TYPE = "points_type"
     POINTSET_POINTS = "udmi.pointset.points"
     POINTSET_UNITS = "udmi.pointset.units"
+    POINTSET_REF="udmi.pointset.ref"
 
   """
     Returns the contents of the excel sheet as a dictionary of format:
@@ -162,14 +167,37 @@ class UDMISiteModelGenerator:
       }
     }
   def _get_gateway_section(self, device):
-    return {
-      "gateway": {
-          "gateway_id": device[self._asset_columns.GATEWAY_ID],
-          "proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
+    if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='GATEWAY':
+      return {
+        "gateway": {
+            #"gateway_id": device[self._asset_columns.GATEWAY_ID]
+            "proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
         
-      }
-    }
+           }
+       }
+    elif device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
+      return {
+        "gateway": {
+            "gateway_id": device[self._asset_columns.GATEWAY_ID]
+            #"proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
+        
+           }
+       }
+    else:
+      return {}
+    
+  
 
+  def split_string(self,ref):
+    alphabets = ""
+    numbers = ""
+    for char in ref:
+      if char.isalpha():
+        alphabets += char
+      elif char.isdigit():
+        numbers += char
+    return alphabets, numbers
+  
   def _get_pointset_section(self, device):
     points = {}
 
@@ -177,10 +205,15 @@ class UDMISiteModelGenerator:
       payload_points_type = point[self._payload_type_columns.POINTS_TYPE]
       payload_point_name = point[self._payload_type_columns.POINTSET_POINTS]
       payload_pointset_units = point[self._payload_type_columns.POINTSET_UNITS]
+      payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      a,b=self.split_string(payload_pointset_ref)
+      trans_str=a+':'+b+'.present_value'
 
       if device[self._asset_columns.POINTSET_POINTS] == payload_points_type:
         points.update({
           payload_point_name: {
+            "ref": trans_str,
             "units": payload_pointset_units
           }
         })
@@ -192,10 +225,32 @@ class UDMISiteModelGenerator:
     }
   
   def _get_cloud_section(self, device):
+    if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
+      return {
+        "cloud": {
+          #"auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
+          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
+        }
+      }
+    else:
+      return {
+        "cloud": {
+          "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
+          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
+        }
+      }
+
+
+
+  
+  def _get_bacnet_addr(self,device):
     return {
-      "cloud": {
-        "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
-        "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
+      "localnet":{
+        "families":{
+          "bacnet":{
+          "addr": device[self._asset_columns.BACNET_ADDR]
+          }
+        }
       }
     }
 
@@ -221,6 +276,15 @@ class UDMISiteModelGenerator:
         metadata.update(self._get_pointset_section(device))
         metadata.update(self._get_cloud_section(device))
         metadata.update(self._get_gateway_section(device))
+
+        if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
+          metadata.update(self._get_bacnet_addr(device))
+
+        if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='DEVICE':
+          metadata.update(self._get_bacnet_addr(device))
+
+        
+
 
 
         os.makedirs(self.OUTPUT_PATH_TEMPLATE.format(name), exist_ok=True)
