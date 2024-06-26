@@ -1,0 +1,18 @@
+{
+  "timestamp":"2024-06-10T09:03:43Z",
+  "version":"1.4.2",
+  "system":{
+    "min_loglevel":300,
+    "metrics_rate_sec":10,
+    "operation":{}
+  },
+  "pointset":{
+    "points":{},
+    "sample_rate_sec":300
+  },
+  "gateway":{
+    "proxy_ids":[
+      "AHU-123, AHU-122"
+    ]
+  }
+}

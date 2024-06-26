@@ -121,8 +121,8 @@ class SiteModel:
 class UDMISiteModelGenerator:
 
   OUTPUT_PATH = "devices/"
-  OUTPUT_PATH_TEMPLATE = "devices/{0}/"
-  OUTPUT_FILE_TEMPLATE = "devices/{0}/metadata.json"
+  OUTPUT_PATH_TEMPLATE = "devices/{0}/config/"
+  OUTPUT_FILE_TEMPLATE = "devices/{0}/config/config.json"
 
   def __init__(self, site_model, site_path):
     self._site_model = site_model
@@ -140,38 +140,29 @@ class UDMISiteModelGenerator:
       #print(p)
       #print(self.SITE_PATH)
       #print(self.OUTPUT_PATH)
-      shutil.rmtree(self.OUTPUT_PATH)
+      shutil.rmtree(p)
 
   def _get_version_timestamp_section(self, device):
     return {
-      "version": device[self._asset_columns.VERSION],
       "timestamp": device[self._asset_columns.TIMESTAMP],
-      "device_version": device[self._asset_columns.DEVICE_VERSION]
+      "version": device[self._asset_columns.VERSION]
     }
 
   def _get_system_section(self, device):
     return {
       "system": {
-        "location": {
-          "site": device[self._asset_columns.LOCATION_SITE],
-          "section": device[self._asset_columns.LOCATION_SECTION],
+        "min_loglevel": 300,
+        "metrics_rate_sec": 10,
+        "operation": { }
           #"position": {
             #"x": device[self._asset_columns.LOCATION_POSITION_X],
             #"y": device[self._asset_columns.LOCATION_POSITION_Y],
             #"z": device[self._asset_columns.LOCATION_POSITION_Z]
          # }
-        },
-        "physical_tag": {
-          "asset": {
-            "guid": "uuid://" + device[self._asset_columns.PHYSICAL_TAG_GUID],
-            "site": device[self._asset_columns.PHYSICAL_TAG_SITE],
-            "name": device[self._asset_columns.PHYSICAL_TAG_NAME]
-          }
-        }
-      }
+        }   
     }
+
   def _get_gateway_section(self, device):
-    if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='GATEWAY':
       return {
         "gateway": {
             #"gateway_id": device[self._asset_columns.GATEWAY_ID]
@@ -179,19 +170,7 @@ class UDMISiteModelGenerator:
         
            }
        }
-    elif device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
-      return {
-        "gateway": {
-            "gateway_id": device[self._asset_columns.GATEWAY_ID]
-            #"proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
-        
-           }
-       }
-    else:
-      return {}
-    
   
-
   def split_string(self,ref):
     alphabets = ""
     numbers = ""
@@ -224,28 +203,11 @@ class UDMISiteModelGenerator:
 
     return {
       "pointset": {
-        "points": points
+        "points": points,
+        "sample_rate_sec": 300
       }
     }
   
-  def _get_cloud_section(self, device):
-    if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
-      return {
-        "cloud": {
-          #"auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
-          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
-        }
-      }
-    else:
-      return {
-        "cloud": {
-          "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
-          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
-        }
-      }
-
-
-
   
   def _get_bacnet_addr(self,device):
     return {
@@ -263,35 +225,37 @@ class UDMISiteModelGenerator:
       json.dump(content, output, indent=2, separators=(",", ":"))
 
   def generate(self):
-    self._cleanup_output()
+    pass
+    #self._cleanup_output()
 
-    if not os.path.exists(self.OUTPUT_PATH): 
-      os.makedirs(self.SITE_PATH, exist_ok=True )
-      os.makedirs(self.OUTPUT_PATH ,exist_ok=True)
+    '''if not os.path.exists(self.OUTPUT_PATH): 
+      os.makedirs(self.SITE_PATH , exist_ok=True)
+      os.makedirs(self.OUTPUT_PATH , exist_ok=True)'''
 
     for device in self._site_model.assets:
       
       if device[self._asset_columns.DEVICE_OR_VIRTUAL] == "Device":
         metadata = {}
         name = device[self._asset_columns.NAME]
-        
+        #print(device)
         metadata.update(self._get_version_timestamp_section(device))
         metadata.update(self._get_system_section(device))
         metadata.update(self._get_pointset_section(device))
-        metadata.update(self._get_cloud_section(device))
-        metadata.update(self._get_gateway_section(device))
+        if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='GATEWAY':
+            metadata.update(self._get_gateway_section(device))
 
         if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
           metadata.update(self._get_bacnet_addr(device))
 
-        if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='DEVICE':
-          metadata.update(self._get_bacnet_addr(device))
+        #if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='DEVICE':
+          #metadata.update(self._get_bacnet_addr(device))
 
         
 
 
-
-        os.makedirs(self.OUTPUT_PATH_TEMPLATE.format(name), exist_ok=True)
+        #path=os.path.join(os.getcwd(),self.OUTPUT_PATH_TEMPLATE.format(name))
+        #path=path.replace('','\\')
+        os.makedirs(self.OUTPUT_PATH_TEMPLATE.format(name),exist_ok=True)
         self._save_to_json(metadata, self.OUTPUT_FILE_TEMPLATE.format(name))
 
 
