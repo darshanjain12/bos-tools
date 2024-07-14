@@ -13,15 +13,16 @@ class Building:
   
   def __init__(self, building_name, building_id):
     self._name = building_name
-    self._id = "FACILITIES/{0}".format(building_id)
+    #self._id = "FACILITIES/{0}".format(building_id)
+    self._id=building_id
   
   """
     Call this to retrieve a dictionary representing this dataset.
   """
   def to_dictionary(self):
     return {
-      self._name: {
+      self._id: {
         "type": "FACILITIES/BUILDING",
-        "id": self._id
+        "code": self._name
       }
     }

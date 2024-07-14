@@ -47,19 +47,35 @@ class DBOZoneSection:
     self._site_model_columns = files.SiteModelColumns
     self._populate_zones()
 
-  def _create_zone(self, row):
+  def _create_zone(self, row,b):
+
+    #new code 
+
+    if row[self._site_model_columns.CONNECTIONS_CONTAINS] in b :
+        
+      contains_value = b[row[self._site_model_columns.CONNECTIONS_CONTAINS]]
+    else:
+      contains_value=row[self._site_model_columns.CONNECTIONS_CONTAINS]
+
     if row[self._site_model_columns.SECTION] == "Zones":
       zone_name = row[self._site_model_columns.ENTITY_NAME]
-      zone_id = "CDM/" + row[self._site_model_columns.ID]
+      #zone_id = "CDM/" + row[self._site_model_columns.ID]
+      zone_id = row[self._site_model_columns.ID]
       zone_type = row[self._site_model_columns.TYPE]
-      zone_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS]
+      #zone_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS]
+      zone_contains = contains_value
       zone = Zone(zone_name, zone_type, zone_id)
       zone.populate_connections(zone_contains, "CONTAINS")
       return zone
 
   def _populate_zones(self):
+    # new code 
+    b={}
+    for i in self._site_model_sheets.LOCATIONS:
+      b[i['dbo.entity_name']]=i['dbo.id']
+
     for row in self._site_model_sheets.LOCATIONS:
-      zone = self._create_zone(row)
+      zone = self._create_zone(row,b)
       if zone is not None:
         self._zones.update(zone.to_dictionary())
 

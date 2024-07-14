@@ -18,19 +18,34 @@ class DBORoomSection:
     self._site_model_columns = files.SiteModelColumns
     self._populate_rooms()
 
-  def _create_room(self, row):
+  def _create_room(self, row,b):
+    #new code 
+
+    if row[self._site_model_columns.CONNECTIONS_CONTAINS] in b :
+        
+      contains_value = b[row[self._site_model_columns.CONNECTIONS_CONTAINS]]
+    else:
+      contains_value=row[self._site_model_columns.CONNECTIONS_CONTAINS]
+   
+
     if row[self._site_model_columns.SECTION] == "Rooms":
       room_name = row[self._site_model_columns.ENTITY_NAME]
       room_id = row[self._site_model_columns.ID]
       room_type = row[self._site_model_columns.TYPE]
-      room_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS]
+      #room_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS]
+      room_contains = contains_value
       room = DBORoom(room_name, room_id, room_type)
       room.populate_connections(room_contains)
       return room
 
   def _populate_rooms(self):
+    #new code
+    b={}
+    for i in self._site_model_sheets.LOCATIONS:
+      b[i['dbo.entity_name']]=i['dbo.id']
+
     for row in self._site_model_sheets.LOCATIONS:
-      room = self._create_room(row)
+      room = self._create_room(row,b)
       if room is not None:
         self._rooms.update(room.to_dictionary())
 

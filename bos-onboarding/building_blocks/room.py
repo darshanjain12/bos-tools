@@ -14,22 +14,25 @@ class Room:
   
   def __init__(self, room_name, room_id):
     self._name = room_name
-    self._id = "FACILITIES/{0}".format(room_id)
+    #self._id = "FACILITIES/{0}".format(room_id)
+    self._id=room_id
     self._connections = {}
   
   def populate_connections(self, room_name):
-    self._connections.update({room_name: "CONTAINS"})    
+    
+    self._connections.update({room_name: "CONTAINS"}) 
+      
 
   def to_dictionary(self):
     return_dictionary = {
-      self._name: {
+      self._id: {
         "type": "FACILITIES/ROOM",
-        "id": self._id
+        "code": self._name
       }
     }
     
     if len(self._connections) > 0:
-      return_dictionary[self._name].update({
+      return_dictionary[self._id].update({
         "connections": self._connections
       })
 
@@ -43,14 +46,14 @@ class DBORoom(Room):
 
   def to_dictionary(self):
     return_dictionary = {
-      self._name: {
+      self._id: {
         "type": self._room_type,
-        "id": self._id
+        "code": self._name
       }
     }
 
     if len(self._connections) > 0:
-      return_dictionary[self._name].update({
+      return_dictionary[self._id].update({
         "connections": self._connections
       })
 

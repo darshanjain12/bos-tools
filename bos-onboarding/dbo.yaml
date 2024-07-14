@@ -1,0 +1,62 @@
+# Building
+3654fc48-914e-4a55-82f6-126534244886:
+  type: FACILITIES/BUILDING
+  code: UK-LON-BLDNG1
+
+# Floor
+a388563d-58e3-4534-b133-19389f6650a4:
+  type: FACILITIES/FLOOR
+  code: UK-LON-BLDNG1_FL1
+  connections:
+    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
+
+# Rooms
+b9f2c8b8-d67e-4b50-824a-7b48ff877429:
+  type: FACILITIES/ROOM
+  code: UK-LON-BLDNG1_RM1
+  connections:
+    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
+58d709a5-aa50-4134-a035-0ccc2d01fd48:
+  type: FACILITIES/ROOM
+  code: UK-LON-BLDNG1_RM2
+  connections:
+    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
+
+# Devices
+9e7c08d9-5c7b-47c7-a664-9e01cb070d39:
+  type: ELECTRICAL/CB_SS
+  code: HLI-101
+9e7c08d9-5c7b-47c7-a664-9e01cb070d31:
+  type: ELECTRICAL/CB_SH
+  translation:
+    PQR:
+      present_value: "points.temperature_sensor.present_value"
+      states:
+        ON: "1"
+        OFF: "0"
+  code: AHU-102
+9e7c08d9-5c7b-47c7-a664-9e01cb070d40:
+  type: ELECTRICAL/CB_SJ
+  translation:
+    ABC:
+      present_value: "points.voltage_sensor.present_value"
+      states:
+        ON: "1"
+        OFF: "0"
+  code: UPS-102
+
+# Virtual Devices
+{}
+
+# Zones
+a0f68db4-f074-49cf-8e80-d65634587f9f:
+  type: HVAC/ZONE
+  code: UK-LON-BLDNG1_ZN1
+  connections:
+    b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
+bdf2e667-8ab2-4ae3-bcc9-9c6c7d995535:
+  type: HVAC/ZONE
+  code: UK-LON-BLDNG1_ZN2
+  connections:
+    58d709a5-aa50-4134-a035-0ccc2d01fd48: CONTAINS
+

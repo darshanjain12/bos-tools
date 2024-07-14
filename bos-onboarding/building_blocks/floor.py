@@ -13,7 +13,8 @@ class Floor:
   
   def __init__(self, floor_name, floor_id):
     self._name = floor_name
-    self._id = "FACILITIES/{0}".format(floor_id)
+    #self._id = "FACILITIES/{0}".format(floor_id)
+    self._id=floor_id
     self._connections = {}
   
   def populate_connections(self, building_name):
@@ -21,14 +22,14 @@ class Floor:
 
   def to_dictionary(self):
     return_dictionary = {
-      self._name: {
+      self._id: {
         "type": "FACILITIES/FLOOR",
-        "id": self._id
+        "code": self._name
       }
     }
     
     if len(self._connections) > 0:
-      return_dictionary[self._name].update({
+      return_dictionary[self._id].update({
         "connections": self._connections
       })
 
@@ -42,14 +43,14 @@ class DBOFloor(Floor):
 
   def to_dictionary(self):
     return_dictionary = {
-      self._name: {
+      self._id: {
         "type": self._floor_type,
-        "id": self._id
+        "code": self._name
       }
     }
 
     if len(self._connections) > 0:
-      return_dictionary[self._name].update({
+      return_dictionary[self._id].update({
         "connections": self._connections
       })
 

@@ -49,19 +49,19 @@ class Zone:
   """
   def to_dictionary(self):
     return_dictionary = {
-      self._name: {
+      self._id: {
         "type": self._type,
-        "id": self._id,
+        "code": self._name,
       }
     }
 
     if len(self._links) > 0:
-      return_dictionary[self._name].update({
+      return_dictionary[self._id].update({
         "links": self._links
       })
 
     if len(self._connections) > 0:
-      return_dictionary[self._name].update({
+      return_dictionary[self._id].update({
         "connections": self._connections
       })
 
