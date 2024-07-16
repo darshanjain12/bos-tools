@@ -20,20 +20,26 @@ class DBORoomSection:
 
   def _create_room(self, row,b):
     #new code 
-
-    if row[self._site_model_columns.CONNECTIONS_CONTAINS] in b :
+    
+    contains_value=[]
+    conn_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS].split(',')
+    for j in conn_contains:
+      if j in b :
         
-      contains_value = b[row[self._site_model_columns.CONNECTIONS_CONTAINS]]
-    else:
-      contains_value=row[self._site_model_columns.CONNECTIONS_CONTAINS]
-   
+        contains_value.append(b[j])
 
+      else:
+        contains_value=j
+
+    
+    contains_val=','.join(contains_value)
+    
     if row[self._site_model_columns.SECTION] == "Rooms":
       room_name = row[self._site_model_columns.ENTITY_NAME]
       room_id = row[self._site_model_columns.ID]
       room_type = row[self._site_model_columns.TYPE]
       #room_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS]
-      room_contains = contains_value
+      room_contains = contains_val
       room = DBORoom(room_name, room_id, room_type)
       room.populate_connections(room_contains)
       return room

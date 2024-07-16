@@ -40,7 +40,10 @@ class Zone:
     self._links.update(self.ZoneLink(name, points).to_dictionary())
 
   def populate_connections(self, name, value):
-    self._connections.update(self.ZoneConnection(name, value).to_dictionary())
+    #new code
+    ids=name.split(',')
+    for i in ids:
+      self._connections.update(self.ZoneConnection(i, value).to_dictionary())
 
   """
     Call this to retrieve a dictionary representing this data.
@@ -50,8 +53,7 @@ class Zone:
   def to_dictionary(self):
     return_dictionary = {
       self._id: {
-        "type": self._type,
-        "code": self._name,
+        "type": self._type
       }
     }
 
@@ -63,6 +65,11 @@ class Zone:
     if len(self._connections) > 0:
       return_dictionary[self._id].update({
         "connections": self._connections
+      })
+
+    if len(self._name) > 0:
+      return_dictionary[self._id].update({
+        "code": self._name
       })
 
     return return_dictionary

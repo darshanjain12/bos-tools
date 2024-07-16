@@ -67,7 +67,7 @@ class Device:
   def to_dictionary(self):
     return_dictionary = {
       self._id: {
-        "type": self._type,
+        "type": self._type
         
       }
     }

@@ -87,7 +87,18 @@ class DBOYAML(YAML):
     self.zone_section = DBOZoneSection(DBO_files)
 
   def create_yaml_file(self):
+   
+    constant1="INITIALIZE"
     with open(self.OUTPUT_PATH, "w") as yaml_file:
+      self.write_yaml_section(
+        yaml_file, {
+      "CONFIG_METADATA": {
+        "operation": constant1
+        
+      }
+    }, "# Heading\n"
+      )
+      
       self.write_yaml_section(
         yaml_file, self.building_section.to_dictionary(), "# Building\n"
       )

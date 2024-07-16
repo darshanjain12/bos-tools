@@ -50,12 +50,19 @@ class DBOZoneSection:
   def _create_zone(self, row,b):
 
     #new code 
-
-    if row[self._site_model_columns.CONNECTIONS_CONTAINS] in b :
+    
+    contains_value=[]
+    conn_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS].split(',')
+    for j in conn_contains:
+      if j in b :
         
-      contains_value = b[row[self._site_model_columns.CONNECTIONS_CONTAINS]]
-    else:
-      contains_value=row[self._site_model_columns.CONNECTIONS_CONTAINS]
+        contains_value.append(b[j])
+
+      else:
+        contains_value=j
+
+    
+    contains_val=','.join(contains_value)
 
     if row[self._site_model_columns.SECTION] == "Zones":
       zone_name = row[self._site_model_columns.ENTITY_NAME]
@@ -63,7 +70,7 @@ class DBOZoneSection:
       zone_id = row[self._site_model_columns.ID]
       zone_type = row[self._site_model_columns.TYPE]
       #zone_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS]
-      zone_contains = contains_value
+      zone_contains = contains_val
       zone = Zone(zone_name, zone_type, zone_id)
       zone.populate_connections(zone_contains, "CONTAINS")
       return zone

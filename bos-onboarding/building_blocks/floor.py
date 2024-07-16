@@ -23,14 +23,18 @@ class Floor:
   def to_dictionary(self):
     return_dictionary = {
       self._id: {
-        "type": "FACILITIES/FLOOR",
-        "code": self._name
+        "type": "FACILITIES/FLOOR"
       }
     }
     
     if len(self._connections) > 0:
       return_dictionary[self._id].update({
         "connections": self._connections
+      })
+
+    if len(self._name) > 0:
+      return_dictionary[self._id].update({
+        "code": self._name
       })
 
     return return_dictionary
@@ -44,14 +48,18 @@ class DBOFloor(Floor):
   def to_dictionary(self):
     return_dictionary = {
       self._id: {
-        "type": self._floor_type,
-        "code": self._name
+        "type": self._floor_type
       }
     }
 
     if len(self._connections) > 0:
       return_dictionary[self._id].update({
         "connections": self._connections
+      })
+    
+    if len(self._name) > 0:
+      return_dictionary[self._id].update({
+        "code": self._name
       })
 
     return return_dictionary
