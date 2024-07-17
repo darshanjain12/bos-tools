@@ -51,7 +51,7 @@ class Device:
   
   def populate_connections(self, name, value):
     #new code
- 
+    
     ids=name.split(',')
     for i in ids:
       self._connections.update(self.Connection(i, value).to_dictionary())

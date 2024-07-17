@@ -79,9 +79,13 @@ class DBODeviceSection(DeviceSection):
     for i in self._site_model_sheets.LOCATIONS:
       b[i['dbo.entity_name']]=i['dbo.id']
     
-     
+    
+    c={}
+    for i in self._site_model_sheets.ASSETS:
+      c[i['entity_instance_name']]=i['udmi.physical_tag.asset.guid']
     #new code 
     
+   
     contains_value=[]
     conn_contains = row[self._site_model_columns.SYSTEM_LOCATION].split(',')
     for j in conn_contains:
@@ -99,13 +103,27 @@ class DBODeviceSection(DeviceSection):
 
     if not feeds.isspace() and len(feeds) > 0:
       feeds = self._get_devices_from_string(feeds)
+      feeds_conn=[]
       for i in feeds:
-        device.populate_connections(i, "FEEDS")
+        if i in c:
+          feeds_conn.append(c[i])
+        else:
+          feeds_conn=i
+    
+      feeds_conn=','.join(feeds_conn)
+      device.populate_connections(feeds_conn, "FEEDS")
 
     if not controls.isspace() and len(controls) > 0:
       controls = self._get_devices_from_string(controls)
+      control_conn = []
       for i in controls:
-        device.populate_connections(i, "CONTROLS")
+        if i in c:
+          control_conn.append(c[i])
+        else:
+          control_conn=i
+      
+      control_conn=','.join(control_conn)
+      device.populate_connections(control_conn, "CONTROLS")
 
   def _fill_device_translations(self, row, device):
     device_payload_type = row[self._site_model_columns.POINTSET_POINTS]
