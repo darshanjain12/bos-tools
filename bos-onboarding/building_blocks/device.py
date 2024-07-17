@@ -15,6 +15,7 @@ class Device:
 
     def __init__(self, name, value):
       self._name = name
+      
       self._value = value
 
     def to_dictionary(self):
@@ -38,16 +39,22 @@ class Device:
     def to_dictionary(self):
       return {self._name: self._value}
 
-  def __init__(self, device_name, device_type, device_id):
+  def __init__(self, device_name, device_type, device_id,device_location,cloud_device_id):
     self._name = device_name
     self._type = device_type
     self._id = device_id
+    self._location = device_location
+    self._cloud_device_id = cloud_device_id
     self._connections = {}
     self._translation = {}
     self._links = {}
   
   def populate_connections(self, name, value):
-    self._connections.update(self.Connection(name, value).to_dictionary())
+    #new code
+ 
+    ids=name.split(',')
+    for i in ids:
+      self._connections.update(self.Connection(i, value).to_dictionary())
 
   def populate_translations(self, name, value):
     self._translation.update(self.Translation(name, value).to_dictionary())
@@ -67,19 +74,22 @@ class Device:
   def to_dictionary(self):
     return_dictionary = {
       self._id: {
-        "type": self._type
+        "type": self._type,
+        "cloud_device_id": self._cloud_device_id
         
       }
     }
 
-    if len(self._connections) > 0:
-      return_dictionary[self._id].update({
-        "connections": self._connections
-      })
+    
 
     if len(self._translation) > 0:
       return_dictionary[self._id].update({
         "translation": self._translation
+      })
+
+    if len(self._connections) > 0:
+      return_dictionary[self._id].update({
+        "connections": self._connections
       })
 
     if len(self._links) > 0:

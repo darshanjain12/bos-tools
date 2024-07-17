@@ -74,6 +74,28 @@ class DBODeviceSection(DeviceSection):
   def _fill_device_connections(self, row, device):
     feeds = row[self._site_model_columns.CONNECTION_FEEDS]
     controls = row[self._site_model_columns.CONNECTION_CONTROLS]
+    #new code
+    b={}
+    for i in self._site_model_sheets.LOCATIONS:
+      b[i['dbo.entity_name']]=i['dbo.id']
+    
+     
+    #new code 
+    
+    contains_value=[]
+    conn_contains = row[self._site_model_columns.SYSTEM_LOCATION].split(',')
+    for j in conn_contains:
+      if j in b :
+        
+        contains_value.append(b[j])
+
+      else:
+        contains_value=j
+
+    
+    contains_val=','.join(contains_value)
+
+    device.populate_connections(contains_val, "CONTAINS")
 
     if not feeds.isspace() and len(feeds) > 0:
       feeds = self._get_devices_from_string(feeds)
@@ -123,11 +145,15 @@ class DBODeviceSection(DeviceSection):
     if row[self._site_model_columns.DEVICE_OR_VIRTUAL] == "Device":
       device_name = row[self._site_model_columns.INSTANCE_NAME]
       device_type = row[self._site_model_columns.DEVICE_TYPE]
+      cloud_device_id = row[self._site_model_columns.CLOUD_DEVICE_ID]
+      #new code 
+      device_location = row[self._site_model_columns.SYSTEM_LOCATION]
       #device_id = "CDM/" + row[self._site_model_columns.DEVICE_ID]
       device_id =  row[self._site_model_columns.DEVICE_ID]
-      device = Device(device_name, device_type, device_id)
-      self._fill_device_connections(row, device)
+      device = Device(device_name, device_type, device_id,device_location,cloud_device_id)
+      
       self._fill_device_translations(row, device)
+      self._fill_device_connections(row, device)
       return device
 
   def _populate_devices(self):
@@ -165,6 +191,7 @@ class DBOVirtualDeviceSection(DeviceSection):
   def _fill_device_connections(self, row, device):
     feeds = row[self._site_model_columns.CONNECTION_FEEDS]
     controls = row[self._site_model_columns.CONNECTION_CONTROLS]
+
 
     if not feeds.isspace() and len(feeds) > 0:
       feeds = self._get_devices_from_string(feeds)

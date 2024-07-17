@@ -1,0 +1,3 @@
+In location sheet 
+--> dbo.connections.contains 
+---> Values should be put as abc,pqr if you are putting multiple values 

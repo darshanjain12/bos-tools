@@ -50,6 +50,9 @@ class DBOFiles:
     SOURCE_DEVICE_FIELD = "dbo.source_device_field"
     VIRTUAL_DEVICE_FIELD = "dbo.virtual_device_field"
 
+    SYSTEM_LOCATION = "udmi.system.location.section"
+    CLOUD_DEVICE_ID = "dbo.cloud_device_id"
+
   def __init__(self, site_model_path):
     self.site_model_sheets = self.SiteModelSheets(site_model_path)
     
