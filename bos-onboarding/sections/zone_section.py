@@ -54,6 +54,7 @@ class DBOZoneSection:
     contains_value=[]
     conn_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS].split(',')
     for j in conn_contains:
+      j=j.strip()
       if j in b :
         
         contains_value.append(b[j])

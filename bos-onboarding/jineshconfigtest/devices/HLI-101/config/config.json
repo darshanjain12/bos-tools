@@ -12,7 +12,7 @@
   },
   "gateway":{
     "proxy_ids":[
-      "AHU-123","AHU-122"
+      "AHU-123, AHU-122"
     ]
   }
 }

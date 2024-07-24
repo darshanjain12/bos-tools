@@ -7,12 +7,12 @@
     "operation":{}
   },
   "pointset":{
-    "points":{},
+    "points":{
+      "supplier_air_temperature_sensor":{
+        "ref":"AV:1.present_value",
+        "units":"degrees_celcius"
+      }
+    },
     "sample_rate_sec":300
-  },
-  "gateway":{
-    "proxy_ids":[
-      "AHU-123","AHU-122"
-    ]
   }
 }

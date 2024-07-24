@@ -8,6 +8,7 @@
 
 import re
 from building_blocks.room import Room, DBORoom
+import sys
 
   
 class DBORoomSection:
@@ -24,13 +25,19 @@ class DBORoomSection:
     contains_value=[]
     conn_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS].split(',')
     for j in conn_contains:
+      j=j.strip()
       if j in b :
         
         contains_value.append(b[j])
 
-      else:
+      elif len(j)==0:
         contains_value=j
-
+        
+      else:
+        print('Value issue : Column value {0} in sheet db.connection.contains does not match with dbo.entity.name'.format(j))
+        print('Please check value in db.connections.contains field')
+        sys.exit()
+                
     
     contains_val=','.join(contains_value)
     

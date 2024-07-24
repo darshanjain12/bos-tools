@@ -89,6 +89,7 @@ class DBODeviceSection(DeviceSection):
     contains_value=[]
     conn_contains = row[self._site_model_columns.SYSTEM_LOCATION].split(',')
     for j in conn_contains:
+      j=j.strip()
       if j in b :
         
         contains_value.append(b[j])
@@ -105,11 +106,12 @@ class DBODeviceSection(DeviceSection):
       feeds = self._get_devices_from_string(feeds)
       feeds_conn=[]
       for i in feeds:
+        i=i.strip()
         if i in c:
           feeds_conn.append(c[i])
         else:
           feeds_conn=i
-    
+
       feeds_conn=','.join(feeds_conn)
       device.populate_connections(feeds_conn, "FEEDS")
 
@@ -117,6 +119,7 @@ class DBODeviceSection(DeviceSection):
       controls = self._get_devices_from_string(controls)
       control_conn = []
       for i in controls:
+        i=i.strip()
         if i in c:
           control_conn.append(c[i])
         else:

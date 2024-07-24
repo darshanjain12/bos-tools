@@ -165,10 +165,14 @@ class UDMISiteModelGenerator:
     }
 
   def _get_gateway_section(self, device):
+      abc=device[self._asset_columns.GATEWAY_PROXY_ID].split(',')
+      abc='","'.join(abc)
+      #abc='"'+abc+'"'
+      
       return {
         "gateway": {
             #"gateway_id": device[self._asset_columns.GATEWAY_ID]
-            "proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
+            "proxy_ids": [abc]
         
            }
        }
@@ -223,8 +227,20 @@ class UDMISiteModelGenerator:
     }
 
   def _save_to_json(self, content, path):
-    with open(path, "w") as output:
-      json.dump(content, output, indent=2, separators=(",", ":"))
+    cnt=json.dumps(content, indent=2, separators=(",", ":"), ensure_ascii=True)
+    #print(cnt)
+
+    with open(path, "w" , encoding='utf-8') as output:
+      output.write(cnt)
+    #new code
+    with open(path, "r") as fout:
+      st=fout.read()
+      st=st.replace('\\',"")
+
+    with open(path, 'w') as fout1:
+      fout1.write(st)
+
+      
 
   def generate(self):
     pass
@@ -258,6 +274,7 @@ class UDMISiteModelGenerator:
         #path=os.path.join(os.getcwd(),self.OUTPUT_PATH_TEMPLATE.format(name))
         #path=path.replace('','\\')
         os.makedirs(self.OUTPUT_PATH_TEMPLATE.format(name),exist_ok=True)
+        
         self._save_to_json(metadata, self.OUTPUT_FILE_TEMPLATE.format(name))
 
 
@@ -265,7 +282,7 @@ def show_title():
   """Show the program title
   """
   f1 = Figlet(font='standard')
-  print(f1.renderText('sheet2UDMI'))
+  print(f1.renderText('sheet2CONFIG'))
 
 def main():
       

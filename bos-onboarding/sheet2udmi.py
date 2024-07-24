@@ -171,11 +171,15 @@ class UDMISiteModelGenerator:
       }
     }
   def _get_gateway_section(self, device):
+    abc=device[self._asset_columns.GATEWAY_PROXY_ID].split(',')
+    abc='","'.join(abc)
+
     if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='GATEWAY':
       return {
         "gateway": {
             #"gateway_id": device[self._asset_columns.GATEWAY_ID]
-            "proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
+            #"proxy_ids": [device[self._asset_columns.GATEWAY_PROXY_ID]]
+            "proxy_ids": [abc]
         
            }
        }
@@ -261,6 +265,16 @@ class UDMISiteModelGenerator:
   def _save_to_json(self, content, path):
     with open(path, "w") as output:
       json.dump(content, output, indent=2, separators=(",", ":"))
+
+    with open(path, "r") as fout:
+      st=fout.read()
+      st=st.replace('\\',"")
+
+    with open(path, 'w') as fout1:
+      fout1.write(st)
+
+
+
 
   def generate(self):
     self._cleanup_output()

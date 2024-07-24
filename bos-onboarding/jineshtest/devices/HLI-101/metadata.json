@@ -5,7 +5,7 @@
   "system":{
     "location":{
       "site":"IN-BLR-RIO",
-      "section":"IN-BLR-RIO-7F-RM-1"
+      "section":""
     },
     "physical_tag":{
       "asset":{
@@ -24,7 +24,7 @@
   },
   "gateway":{
     "proxy_ids":[
-      "AHU-123, AHU-122"
+      "AHU-123","AHU-122"
     ]
   }
 }

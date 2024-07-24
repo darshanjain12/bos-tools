@@ -5,11 +5,11 @@
   "system":{
     "location":{
       "site":"IN-BLR-RIO",
-      "section":"IN-BLR-RIO-7F-RM-1"
+      "section":"UK-LON-BLDNG1_RM1"
     },
     "physical_tag":{
       "asset":{
-        "guid":"uuid://9e7c08d9-5c7b-47c7-a664-9e01cb070d39",
+        "guid":"uuid://9e7c08d9-5c7b-47c7-a664-9e01cb070d40",
         "site":"IN-BLR-RIO",
         "name":"UPS-102"
       }
