@@ -165,15 +165,16 @@ class UDMISiteModelGenerator:
     }
 
   def _get_gateway_section(self, device):
+      
       abc=device[self._asset_columns.GATEWAY_PROXY_ID].split(',')
-      abc='","'.join(abc)
+  
+      #abc='","'.join(abc)
       #abc='"'+abc+'"'
       
       return {
         "gateway": {
             #"gateway_id": device[self._asset_columns.GATEWAY_ID]
-            "proxy_ids": [abc]
-        
+            "proxy_ids": abc
            }
        }
   
@@ -233,12 +234,12 @@ class UDMISiteModelGenerator:
     with open(path, "w" , encoding='utf-8') as output:
       output.write(cnt)
     #new code
-    with open(path, "r") as fout:
+    '''with open(path, "r") as fout:
       st=fout.read()
       st=st.replace('\\',"")
 
     with open(path, 'w') as fout1:
-      fout1.write(st)
+      fout1.write(st)'''
 
       
 
