@@ -1,22 +1,27 @@
 {
   "version":"1.4.2",
-  "timestamp":"2024-06-10T09:03:43Z",
+  "timestamp":"2024-08-15T09:03:43Z",
   "device_version":"1.4.2",
   "system":{
     "location":{
-      "site":"IN-BLR-RIO",
-      "section":""
+      "site":"IN-BLR-ANANTA",
+      "section":"IN-BLR-ANANTA-1AHURM"
     },
     "physical_tag":{
       "asset":{
         "guid":"uuid://9e7c08d9-5c7b-47c7-a664-9e01cb070d39",
-        "site":"IN-BLR-RIO",
-        "name":"HLI-101"
+        "site":"IN-BLR-ANANTA",
+        "name":"HLI-1"
       }
     }
   },
   "pointset":{
-    "points":{}
+    "points":{
+      "discharge_fan_run_command":{
+        "ref":"AV:1.present_value",
+        "units":""
+      }
+    }
   },
   "cloud":{
     "auth_type":"RS256_X509",
@@ -24,8 +29,8 @@
   },
   "gateway":{
     "proxy_ids":[
-      "AHU-123",
-      "AHU-122"
+      "CB-1",
+      "CB-2"
     ]
   }
 }

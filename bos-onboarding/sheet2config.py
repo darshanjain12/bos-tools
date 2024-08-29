@@ -83,6 +83,7 @@ class SiteModel:
     POINTSET_POINTS = "udmi.pointset.points"
     POINTSET_UNITS = "udmi.pointset.units"
     POINTSET_REF="udmi.pointset.ref"
+    POINTSET_FLAG ="dbo.flag"
 
   """
     Returns the contents of the excel sheet as a dictionary of format:
@@ -196,17 +197,18 @@ class UDMISiteModelGenerator:
       payload_point_name = point[self._payload_type_columns.POINTSET_POINTS]
       payload_pointset_units = point[self._payload_type_columns.POINTSET_UNITS]
       payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
-      payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      payload_pointset_flag = point[self._payload_type_columns.POINTSET_FLAG]
       a,b=self.split_string(payload_pointset_ref)
       trans_str=a+':'+b+'.present_value'
 
       if device[self._asset_columns.POINTSET_POINTS] == payload_points_type:
-        points.update({
-          payload_point_name: {
+        if payload_pointset_flag == 'N':
+          points.update({
+            payload_point_name: {
             "ref": trans_str,
             "units": payload_pointset_units
-          }
-        })
+            }
+          })
 
     return {
       "pointset": {

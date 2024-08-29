@@ -29,6 +29,15 @@ class Device:
       
     def to_dictionary(self):
       return {self._name: self._value}
+    
+  class Translation_m:
+
+    def __init__(self, value):
+      
+      self._value = value
+      
+    def to_dictionary(self):
+      return self._value
 
   class Link:
 
@@ -58,6 +67,9 @@ class Device:
 
   def populate_translations(self, name, value):
     self._translation.update(self.Translation(name, value).to_dictionary())
+  #new code
+  def populate_translations_m(self, value):
+    self._translation.update(self.Translation_m( value).to_dictionary())
 
   def populate_links(self, name, value):
     self._links.update(self.Link(name, value).to_dictionary())

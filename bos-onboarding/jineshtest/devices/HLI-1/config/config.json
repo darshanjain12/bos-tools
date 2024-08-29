@@ -1,5 +1,5 @@
 {
-  "timestamp":"2024-06-10T09:03:43Z",
+  "timestamp":"2024-08-15T09:03:43Z",
   "version":"1.4.2",
   "system":{
     "min_loglevel":300,
@@ -8,11 +8,17 @@
   },
   "pointset":{
     "points":{
-      "voltage_sensor":{
+      "discharge_fan_run_command":{
         "ref":"AV:1.present_value",
-        "units":"volts"
+        "units":""
       }
     },
     "sample_rate_sec":300
+  },
+  "gateway":{
+    "proxy_ids":[
+      "CB-1",
+      "CB-2"
+    ]
   }
 }

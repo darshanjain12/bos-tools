@@ -81,6 +81,7 @@ class SiteModel:
     POINTSET_POINTS = "udmi.pointset.points"
     POINTSET_UNITS = "udmi.pointset.units"
     POINTSET_REF="udmi.pointset.ref"
+    POINTSET_FLAG ="dbo.flag"
 
   """
     Returns the contents of the excel sheet as a dictionary of format:
@@ -173,8 +174,9 @@ class UDMISiteModelGenerator:
   def _get_gateway_section(self, device):
     abc=device[self._asset_columns.GATEWAY_PROXY_ID].split(',')
     #abc='","'.join(abc)
-
+    #print(abc)
     if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='GATEWAY':
+      
       return {
         "gateway": {
             #"gateway_id": device[self._asset_columns.GATEWAY_ID]
@@ -209,22 +211,26 @@ class UDMISiteModelGenerator:
   def _get_pointset_section(self, device):
     points = {}
 
-    for point in self._site_model.payload_types:      
+    for point in self._site_model.payload_types:
+      
       payload_points_type = point[self._payload_type_columns.POINTS_TYPE]
       payload_point_name = point[self._payload_type_columns.POINTSET_POINTS]
       payload_pointset_units = point[self._payload_type_columns.POINTSET_UNITS]
       payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
-      payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      #payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      payload_pointset_flag = point[self._payload_type_columns.POINTSET_FLAG]
+
       a,b=self.split_string(payload_pointset_ref)
       trans_str=a+':'+b+'.present_value'
 
       if device[self._asset_columns.POINTSET_POINTS] == payload_points_type:
-        points.update({
-          payload_point_name: {
+        if payload_pointset_flag == 'N':
+          points.update({
+            payload_point_name: {
             "ref": trans_str,
             "units": payload_pointset_units
-          }
-        })
+            }
+          })
 
     return {
       "pointset": {
@@ -286,6 +292,7 @@ class UDMISiteModelGenerator:
     for device in self._site_model.assets:
       
       if device[self._asset_columns.DEVICE_OR_VIRTUAL] == "Device":
+        
         metadata = {}
         name = device[self._asset_columns.NAME]
         

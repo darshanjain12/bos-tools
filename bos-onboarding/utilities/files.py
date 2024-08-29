@@ -53,6 +53,8 @@ class DBOFiles:
     SYSTEM_LOCATION = "udmi.system.location.section"
     CLOUD_DEVICE_ID = "dbo.cloud_device_id"
 
+    FLAG = "dbo.flag"
+
   def __init__(self, site_model_path):
     self.site_model_sheets = self.SiteModelSheets(site_model_path)
     

@@ -111,10 +111,17 @@ class DBOYAML(YAML):
       self.write_yaml_section(
         yaml_file, self.device_section.to_dictionary(), "# Devices\n"
       )
-      self.write_yaml_section(
+      if len(self.virtual_device_section.to_dictionary())==0:
+        pass
+      else:
+        self.write_yaml_section(
         yaml_file, self.virtual_device_section.to_dictionary(), "# Virtual Devices\n"
       )
-      self.write_yaml_section(
+      
+      if len(self.zone_section.to_dictionary())==0:
+        pass
+      else:
+        self.write_yaml_section(
         yaml_file, self.zone_section.to_dictionary(), "# Zones\n"
       )
     self._cleanup_yaml()

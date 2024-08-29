@@ -5,101 +5,59 @@ CONFIG_METADATA:
 # Building
 3654fc48-914e-4a55-82f6-126534244886:
   type: FACILITIES/BUILDING
-  code: UK-LON-BLDNG1
+  code: IN-BLR-ANANTA
 
 # Floor
 a388563d-58e3-4534-b133-19389f6650a4:
   type: FACILITIES/FLOOR
   connections:
     3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-  code: UK-LON-BLDNG1_FL1
+  code: IN-BLR-ANANTA-1
 
 # Rooms
 b9f2c8b8-d67e-4b50-824a-7b48ff877429:
   type: FACILITIES/ROOM
   connections:
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
     a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-  code: UK-LON-BLDNG1_RM1
-58d709a5-aa50-4134-a035-0ccc2d01fd48:
-  type: FACILITIES/ROOM
-  connections:
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-  code: UK-LON-BLDNG1_RM2
+  code: IN-BLR-ANANTA-1ELECRM
 
 # Devices
 9e7c08d9-5c7b-47c7-a664-9e01cb070d39:
-  type: ELECTRICAL/CB_SS
+  type: GATEWAY/PASSTHROUGH
   cloud_device_id: 1234
-  connections:
-    b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-  code: HLI-101
-9e7c08d9-5c7b-47c7-a664-9e01cb070d31:
-  type: ELECTRICAL/CB_SH
-  cloud_device_id: 4567
   translation:
-    temperature_sensor:
-      present_value: "points.temperature_sensor.present_value"
+    discharge_fan_run_command:
+      present_value: "points.discharge_fan_run_command.present_value"
       states:
         ON: "1"
         OFF: "0"
   connections:
-    58d709a5-aa50-4134-a035-0ccc2d01fd48: CONTAINS
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-  code: AHU-102
-9e7c08d9-5c7b-47c7-a664-9e01cb070d40:
-  type: ELECTRICAL/CB_SJ
-  cloud_device_id: 8910
+    b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
+  code: HLI-1
+9e7c08d9-5c7b-47c7-a764-9e01cb070d39:
+  type: ELECTRICAL/CB_SS
+  cloud_device_id: 2333
   translation:
-    voltage_sensor:
-      present_value: "points.voltage_sensor.present_value"
-      units:
-        key: "pointset.points.voltage_sensor.units"
-        values:
-          volts: volts
+    run_status:
+      present_value: "points.run_status.present_value"
+      states:
+        ON: "1"
+        OFF: "0"
+    run_command: MISSING
   connections:
     b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-    9e7c08d9-5c7b-47c7-a664-9e01cb070d39: CONTROLS
-  code: UPS-102
-9e7c08d9-5c7b-47c7-a664-9e01cb070d99:
-  type: HVAC/VAV_SD_CSP
-  cloud_device_id: 
+  code: CB-1
+9e7c08d9-5c7b-47c7-a964-9e01cb070d39:
+  type: ELECTRICAL/CB_SS
+  cloud_device_id: 3444
   translation:
-    supplier_air_temperature_sensor:
-      present_value: "points.supplier_air_temperature_sensor.present_value"
-      units:
-        key: "pointset.points.supplier_air_temperature_sensor.units"
-        values:
-          degrees_celcius: degrees_celcius
+    run_status: MISSING
+    run_command:
+      present_value: "points.run_command.present_value"
+      states:
+        ON: "1"
+        OFF: "0"
   connections:
     b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-    9e7c08d9-5c7b-47c7-a664-9e01cb070d31: FEEDS
-  code: VAV-102
-
-# Virtual Devices
-{}
-
-# Zones
-a0f68db4-f074-49cf-8e80-d65634587f9f:
-  type: HVAC/ZONE
-  connections:
-    b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-  code: UK-LON-BLDNG1_ZN1
-bdf2e667-8ab2-4ae3-bcc9-9c6c7d995535:
-  type: HVAC/ZONE
-  connections:
-    58d709a5-aa50-4134-a035-0ccc2d01fd48: CONTAINS
-    a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-    3654fc48-914e-4a55-82f6-126534244886: CONTAINS
-  code: UK-LON-BLDNG1_ZN2
+  code: CB-2
 

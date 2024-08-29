@@ -130,37 +130,48 @@ class DBODeviceSection(DeviceSection):
 
   def _fill_device_translations(self, row, device):
     device_payload_type = row[self._site_model_columns.POINTSET_POINTS]
+    
+    #flag = ab[self._site_model_columns.FLAG]
 
     for point in self._site_model_sheets.PAYLOAD_TYPES:
 
       if device_payload_type == point[self._site_model_columns.POINTS_TYPE]:
-        
+      
         name = point[self._site_model_columns.TRANSLATION_FIELDS]
         value = point[self._site_model_columns.POINTSET_POINTS]
         units = point[self._site_model_columns.TRANSLATION_UNITS]
-        states = point[self._site_model_columns.STATES]
+        states =point[self._site_model_columns.STATES]
+        flag = point[self._site_model_columns.FLAG]
 
         translation_dict = {}
 
-        translation_dict.update({
+        if flag == 'N':
+          translation_dict.update({
           "present_value": "\"points." + value + ".present_value\""
-        })
+          })
 
-        if not units.isspace() and len(units) > 0:
-          translation_dict.update({
-            "units": {
-              "key": "\"pointset.points." + value + ".units\"",
-              "values": self._get_units_dict(units)
-            }
-          })
+          if not units.isspace() and len(units) > 0:
+            translation_dict.update({
+              "units": {
+                "key": "\"pointset.points." + value + ".units\"",
+                "values": self._get_units_dict(units)
+              }
+            })
         
-        if not states.isspace() and len(states) > 0:
-          translation_dict.update({
-            "states": self._get_states_dict(states)
-          })
+          if not states.isspace() and len(states) > 0:
+            translation_dict.update({
+              "states": self._get_states_dict(states)
+            })
         
-        if translation_dict:
-          device.populate_translations(name, translation_dict)
+          if translation_dict:
+            device.populate_translations(name, translation_dict)
+        else:
+          translation_dict.update({
+            name:"MISSING"
+          })
+          if translation_dict:
+            device.populate_translations_m(translation_dict)
+
 
   def _create_device(self, row):
     if row[self._site_model_columns.DEVICE_OR_VIRTUAL] == "Device":
@@ -178,8 +189,10 @@ class DBODeviceSection(DeviceSection):
       return device
 
   def _populate_devices(self):
+    
     for row in self._site_model_sheets.ASSETS:
       device = self._create_device(row)
+      
       if device is not None:
         self._devices.append(device)
 

@@ -1,5 +1,5 @@
 {
-  "timestamp":"2024-06-10T09:03:43Z",
+  "timestamp":"2024-08-15T09:03:43Z",
   "version":"1.4.2",
   "system":{
     "min_loglevel":300,
@@ -8,11 +8,16 @@
   },
   "pointset":{
     "points":{
-      "supplier_air_temperature_sensor":{
-        "ref":"AV:1.present_value",
-        "units":"degrees_celcius"
+      "run_status":{
+        "ref":"BV:1.present_value",
+        "units":""
       }
     },
     "sample_rate_sec":300
+  },
+  "gateway":{
+    "proxy_ids":[
+      ""
+    ]
   }
 }
