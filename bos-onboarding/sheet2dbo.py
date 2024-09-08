@@ -90,6 +90,7 @@ class DBOYAML(YAML):
    
     constant1="INITIALIZE"
     with open(self.OUTPUT_PATH, "w") as yaml_file:
+      # Default static values are added as per requirement
       self.write_yaml_section(
         yaml_file, {
       "CONFIG_METADATA": {
@@ -111,13 +112,14 @@ class DBOYAML(YAML):
       self.write_yaml_section(
         yaml_file, self.device_section.to_dictionary(), "# Devices\n"
       )
+      # Currently No scope for Virtual Devices so not create enteries in dbo file
       if len(self.virtual_device_section.to_dictionary())==0:
         pass
       else:
         self.write_yaml_section(
         yaml_file, self.virtual_device_section.to_dictionary(), "# Virtual Devices\n"
       )
-      
+      # Currently No scope for VZone so not create enteries in dbo file
       if len(self.zone_section.to_dictionary())==0:
         pass
       else:

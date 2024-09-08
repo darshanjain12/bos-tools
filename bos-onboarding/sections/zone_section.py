@@ -49,7 +49,7 @@ class DBOZoneSection:
 
   def _create_zone(self, row,b):
 
-    #new code 
+    # Adding logic for dbo.connnection contains to check values are present or not
     
     contains_value=[]
     conn_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS].split(',')
@@ -62,7 +62,6 @@ class DBOZoneSection:
       else:
         contains_value=j
 
-    
     contains_val=','.join(contains_value)
 
     if row[self._site_model_columns.SECTION] == "Zones":
@@ -77,7 +76,7 @@ class DBOZoneSection:
       return zone
 
   def _populate_zones(self):
-    # new code 
+    #Creating seperate dictionary contains entity_name  as key and dbo.id as value
     b={}
     for i in self._site_model_sheets.LOCATIONS:
       b[i['dbo.entity_name']]=i['dbo.id']

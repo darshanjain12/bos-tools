@@ -14,18 +14,22 @@ class Room:
   
   def __init__(self, room_name, room_id):
     self._name = room_name
+    """
+    original code change for Id as per requirement. Orginal code is commented. 
+    """
     #self._id = "FACILITIES/{0}".format(room_id)
     self._id=room_id
     self._connections = {}
   
   def populate_connections(self, room_name):
-    #new code
+    # To handle multiple values passed in room_name when function called in room_section.py
     ids=room_name.split(',')
     for i in ids:
       self._connections.update({i: "CONTAINS"}) 
 
 
   def to_dictionary(self):
+    #Logic is changed as per requirement Id is replace with name
     return_dictionary = {
       self._id: {
         "type": "FACILITIES/ROOM"
@@ -36,7 +40,7 @@ class Room:
       return_dictionary[self._id].update({
         "connections": self._connections
       })
-
+    #Logic added for new key attribute code
     if len(self._name) > 0:
       return_dictionary[self._id].update({
         "code": self._name
@@ -51,6 +55,7 @@ class DBORoom(Room):
     self._room_type = room_type
 
   def to_dictionary(self):
+    #Logic is changed as per requirement name is replaced with Id
     return_dictionary = {
       self._id: {
         "type": self._room_type
@@ -64,6 +69,7 @@ class DBORoom(Room):
       })
 
     if len(self._name) > 0:
+      #Logic added for new key attribute code
       return_dictionary[self._id].update({
         "code": self._name
       })

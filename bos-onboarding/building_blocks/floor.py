@@ -13,6 +13,9 @@ class Floor:
   
   def __init__(self, floor_name, floor_id):
     self._name = floor_name
+    """
+    original code change for Id as per requirement. Orginal code is commented. 
+    """
     #self._id = "FACILITIES/{0}".format(floor_id)
     self._id=floor_id
     self._connections = {}
@@ -21,6 +24,7 @@ class Floor:
     self._connections.update({building_name: "CONTAINS"})
 
   def to_dictionary(self):
+    #Logic is changed as per requirement name is replaced with Id
     return_dictionary = {
       self._id: {
         "type": "FACILITIES/FLOOR"
@@ -31,7 +35,7 @@ class Floor:
       return_dictionary[self._id].update({
         "connections": self._connections
       })
-
+    # new key attribute code is added
     if len(self._name) > 0:
       return_dictionary[self._id].update({
         "code": self._name
@@ -46,6 +50,7 @@ class DBOFloor(Floor):
     self._floor_type = floor_type
 
   def to_dictionary(self):
+    #Logic is changed as per requirement name is replaced with Id
     return_dictionary = {
       self._id: {
         "type": self._floor_type
@@ -56,7 +61,7 @@ class DBOFloor(Floor):
       return_dictionary[self._id].update({
         "connections": self._connections
       })
-    
+    # new key attribute code is added
     if len(self._name) > 0:
       return_dictionary[self._id].update({
         "code": self._name

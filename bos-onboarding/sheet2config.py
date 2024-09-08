@@ -53,6 +53,7 @@ class SiteModel:
     TIMESTAMP = "udmi.timestamp"
     LOCATION_SITE = "udmi.system.location.site"
     LOCATION_SECTION = "udmi.system.location.section"
+    # These below fields are not required so we have commented
     #LOCATION_POSITION_X = "udmi.system.location.position.x"
     #LOCATION_POSITION_Y = "udmi.system.location.position.y"
     #LOCATION_POSITION_Z = "udmi.system.location.position.z"
@@ -65,6 +66,7 @@ class SiteModel:
 
     # Used to create the "cloud" section.
     CLOUD_AUTH_TYPE = "udmi.cloud.auth_type"
+    # Column is added to check condition in cloud section
     CLOUD_CONNECTION_TYPE = "udmi.cloud.connection"
 
     # Used to create the "gateway" section.
@@ -82,7 +84,9 @@ class SiteModel:
     POINTS_TYPE = "points_type"
     POINTSET_POINTS = "udmi.pointset.points"
     POINTSET_UNITS = "udmi.pointset.units"
+    #Column added for ref - key attribute in poinset.point section
     POINTSET_REF="udmi.pointset.ref"
+    # Added for Missing logic
     POINTSET_FLAG ="dbo.flag"
 
   """
@@ -123,6 +127,7 @@ class SiteModel:
 
 class UDMISiteModelGenerator:
 
+  # Folder created as per required format
   OUTPUT_PATH = "devices/"
   OUTPUT_PATH_TEMPLATE = "devices/{0}/config/"
   OUTPUT_FILE_TEMPLATE = "devices/{0}/config/config.json"
@@ -138,11 +143,10 @@ class UDMISiteModelGenerator:
       self.OUTPUT_FILE_TEMPLATE = os.path.join(site_path, self.OUTPUT_FILE_TEMPLATE)
 
   def _cleanup_output(self):
+    #logic added for cleanup of the files in respective folder to check
     if os.path.exists(self.OUTPUT_PATH):
       p=os.path.join(os.getcwd(),self.SITE_PATH)
-      #print(p)
-      #print(self.SITE_PATH)
-      #print(self.OUTPUT_PATH)
+      
       shutil.rmtree(p)
 
   def _get_version_timestamp_section(self, device):
@@ -152,6 +156,7 @@ class UDMISiteModelGenerator:
     }
 
   def _get_system_section(self, device):
+    # Default system added static values are added
     return {
       "system": {
         "min_loglevel": 300,
@@ -164,14 +169,11 @@ class UDMISiteModelGenerator:
          # }
         }   
     }
-
+  # Function added as per Gateway condition
   def _get_gateway_section(self, device):
       
       abc=device[self._asset_columns.GATEWAY_PROXY_ID].split(',')
   
-      #abc='","'.join(abc)
-      #abc='"'+abc+'"'
-      
       return {
         "gateway": {
             #"gateway_id": device[self._asset_columns.GATEWAY_ID]
@@ -180,6 +182,7 @@ class UDMISiteModelGenerator:
        }
   
   def split_string(self,ref):
+    #Splitting alpha charachter and numbers
     alphabets = ""
     numbers = ""
     for char in ref:
@@ -196,10 +199,15 @@ class UDMISiteModelGenerator:
       payload_points_type = point[self._payload_type_columns.POINTS_TYPE]
       payload_point_name = point[self._payload_type_columns.POINTSET_POINTS]
       payload_pointset_units = point[self._payload_type_columns.POINTSET_UNITS]
+      # New column added for change in logic for newly added key attribute ref
       payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      # New column added for pointset points condition
       payload_pointset_flag = point[self._payload_type_columns.POINTSET_FLAG]
+      
       a,b=self.split_string(payload_pointset_ref)
       trans_str=a+':'+b+'.present_value'
+
+      #pointset points condition
 
       if device[self._asset_columns.POINTSET_POINTS] == payload_points_type:
         if payload_pointset_flag == 'N':
@@ -217,7 +225,7 @@ class UDMISiteModelGenerator:
       }
     }
   
-  
+  # Logic added for when connection type is Device
   def _get_bacnet_addr(self,device):
     return {
       "localnet":{
@@ -256,12 +264,14 @@ class UDMISiteModelGenerator:
     for device in self._site_model.assets:
       
       if device[self._asset_columns.DEVICE_OR_VIRTUAL] == "Device":
+
         metadata = {}
         name = device[self._asset_columns.NAME]
-        #print(device)
+        
         metadata.update(self._get_version_timestamp_section(device))
         metadata.update(self._get_system_section(device))
         metadata.update(self._get_pointset_section(device))
+
         if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='GATEWAY':
             metadata.update(self._get_gateway_section(device))
 
@@ -270,9 +280,6 @@ class UDMISiteModelGenerator:
 
         #if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='DEVICE':
           #metadata.update(self._get_bacnet_addr(device))
-
-        
-
 
         #path=os.path.join(os.getcwd(),self.OUTPUT_PATH_TEMPLATE.format(name))
         #path=path.replace('','\\')

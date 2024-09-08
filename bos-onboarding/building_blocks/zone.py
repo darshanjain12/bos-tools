@@ -40,7 +40,7 @@ class Zone:
     self._links.update(self.ZoneLink(name, points).to_dictionary())
 
   def populate_connections(self, name, value):
-    #new code
+    #Logic is added to handle multiple values passed when function called in zone_section.py
     ids=name.split(',')
     for i in ids:
       self._connections.update(self.ZoneConnection(i, value).to_dictionary())
@@ -51,6 +51,7 @@ class Zone:
     If links are empty, don't add the link value to dictionary.
   """
   def to_dictionary(self):
+    #Logic added for new key attribute code
     return_dictionary = {
       self._id: {
         "type": self._type
@@ -68,6 +69,7 @@ class Zone:
       })
 
     if len(self._name) > 0:
+      #Logic added for new key attribute code
       return_dictionary[self._id].update({
         "code": self._name
       })

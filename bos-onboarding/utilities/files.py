@@ -29,6 +29,7 @@ class DBOFiles:
     ENTITY_NAME = "dbo.entity_name"
     TYPE = "dbo.type"
     ID = "dbo.id"
+    # Locgic added for connection contains,feeds fields
     CONNECTIONS_CONTAINS = "dbo.connections.contains"
 
     # Used in the Assets/Payload Types sheets.
@@ -53,6 +54,7 @@ class DBOFiles:
     SYSTEM_LOCATION = "udmi.system.location.section"
     CLOUD_DEVICE_ID = "dbo.cloud_device_id"
 
+    # column added for MISSING logic for translation fields
     FLAG = "dbo.flag"
 
   def __init__(self, site_model_path):

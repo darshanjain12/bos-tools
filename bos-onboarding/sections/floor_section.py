@@ -18,10 +18,7 @@ class DBOFloorSection:
     self._populate_floors()
 
   def _create_floor(self, row,b):
-    #new code
-    #print(row[self._site_model_columns.ENTITY_NAME])
-    #print(row[self._site_model_columns.CONNECTIONS_CONTAINS])
-
+    #Value checking for dbo.comtains field
     if (row[self._site_model_columns.CONNECTIONS_CONTAINS] in b ) and (row[self._site_model_columns.CONNECTIONS_CONTAINS]!=''):
         
       contains_value = b[row[self._site_model_columns.CONNECTIONS_CONTAINS]]
@@ -41,7 +38,7 @@ class DBOFloorSection:
       return floor
 
   def _populate_floors(self):
-    #new code
+    #Value Assigning for dbo.id value addition
     b={}
     for i in self._site_model_sheets.LOCATIONS:
       b[i['dbo.entity_name']]=i['dbo.id']

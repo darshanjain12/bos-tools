@@ -20,12 +20,13 @@ class DBORoomSection:
     self._populate_rooms()
 
   def _create_room(self, row,b):
-    #new code 
-    
+    #Handling multiple values coming from dbo.contains
+
     contains_value=[]
     conn_contains = row[self._site_model_columns.CONNECTIONS_CONTAINS].split(',')
     for j in conn_contains:
       j=j.strip()
+      # Handling exception in values written in dbo.contains does not have value 
       if j in b :
         
         contains_value.append(b[j])
@@ -52,7 +53,7 @@ class DBORoomSection:
       return room
 
   def _populate_rooms(self):
-    #new code
+    #Creating seperate dictionary contains entity_name  as key and dbo.id as value
     b={}
     for i in self._site_model_sheets.LOCATIONS:
       b[i['dbo.entity_name']]=i['dbo.id']

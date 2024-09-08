@@ -51,6 +51,7 @@ class SiteModel:
     TIMESTAMP = "udmi.timestamp"
     LOCATION_SITE = "udmi.system.location.site"
     LOCATION_SECTION = "udmi.system.location.section"
+    # These below fields are not required so we have commented
     #LOCATION_POSITION_X = "udmi.system.location.position.x"
     #LOCATION_POSITION_Y = "udmi.system.location.position.y"
     #LOCATION_POSITION_Z = "udmi.system.location.position.z"
@@ -63,6 +64,7 @@ class SiteModel:
 
     # Used to create the "cloud" section.
     CLOUD_AUTH_TYPE = "udmi.cloud.auth_type"
+    # Column is added to check condition in cloud section
     CLOUD_CONNECTION_TYPE = "udmi.cloud.connection"
 
     # Used to create the "gateway" section.
@@ -80,7 +82,9 @@ class SiteModel:
     POINTS_TYPE = "points_type"
     POINTSET_POINTS = "udmi.pointset.points"
     POINTSET_UNITS = "udmi.pointset.units"
+    #Column added for ref - key attribute in poinset.point section
     POINTSET_REF="udmi.pointset.ref"
+    # Added for Missing logic
     POINTSET_FLAG ="dbo.flag"
 
   """
@@ -136,14 +140,14 @@ class UDMISiteModelGenerator:
       self.OUTPUT_FILE_TEMPLATE = os.path.join(site_path, self.OUTPUT_FILE_TEMPLATE)
 
   def _cleanup_output(self):
+    #logic added for cleanup of the files in respective folder to check
     if os.path.exists(self.OUTPUT_PATH):
       p=os.path.join(os.getcwd(),self.SITE_PATH)
-      #print(p)
-      #print(self.SITE_PATH)
-      #print(self.OUTPUT_PATH)
+      
       shutil.rmtree(self.OUTPUT_PATH)
 
   def _get_version_timestamp_section(self, device):
+    # Device_version - key attribute is added as per requirement
     return {
       "version": device[self._asset_columns.VERSION],
       "timestamp": device[self._asset_columns.TIMESTAMP],
@@ -171,6 +175,7 @@ class UDMISiteModelGenerator:
         }
       }
     }
+  # Function added as per Gateway condition
   def _get_gateway_section(self, device):
     abc=device[self._asset_columns.GATEWAY_PROXY_ID].split(',')
     #abc='","'.join(abc)
@@ -199,6 +204,7 @@ class UDMISiteModelGenerator:
   
 
   def split_string(self,ref):
+    #Splitting alpha charachter and numbers
     alphabets = ""
     numbers = ""
     for char in ref:
@@ -216,13 +222,15 @@ class UDMISiteModelGenerator:
       payload_points_type = point[self._payload_type_columns.POINTS_TYPE]
       payload_point_name = point[self._payload_type_columns.POINTSET_POINTS]
       payload_pointset_units = point[self._payload_type_columns.POINTSET_UNITS]
+      # New column added for change in logic for newly added key attribute ref
       payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
-      #payload_pointset_ref = point[self._payload_type_columns.POINTSET_REF]
+      # New column added for pointset points condition
       payload_pointset_flag = point[self._payload_type_columns.POINTSET_FLAG]
 
       a,b=self.split_string(payload_pointset_ref)
       trans_str=a+':'+b+'.present_value'
 
+      #pointset points condition
       if device[self._asset_columns.POINTSET_POINTS] == payload_points_type:
         if payload_pointset_flag == 'N':
           points.update({
@@ -238,6 +246,7 @@ class UDMISiteModelGenerator:
       }
     }
   
+  # Logic added for Proxied connection type
   def _get_cloud_section(self, device):
     if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='PROXIED':
       return {
@@ -254,9 +263,7 @@ class UDMISiteModelGenerator:
         }
       }
 
-
-
-  
+  # Logic added for when connection type is Device
   def _get_bacnet_addr(self,device):
     return {
       "localnet":{
@@ -307,10 +314,6 @@ class UDMISiteModelGenerator:
 
         if device[self._asset_columns.CLOUD_CONNECTION_TYPE]=='DEVICE':
           metadata.update(self._get_bacnet_addr(device))
-
-        
-
-
 
         os.makedirs(self.OUTPUT_PATH_TEMPLATE.format(name), exist_ok=True)
         self._save_to_json(metadata, self.OUTPUT_FILE_TEMPLATE.format(name))

@@ -74,22 +74,23 @@ class DBODeviceSection(DeviceSection):
   def _fill_device_connections(self, row, device):
     feeds = row[self._site_model_columns.CONNECTION_FEEDS]
     controls = row[self._site_model_columns.CONNECTION_CONTROLS]
-    #new code
+    #Creating seperate dictionary for all the dbo.id values from location tab of excel
     b={}
     for i in self._site_model_sheets.LOCATIONS:
       b[i['dbo.entity_name']]=i['dbo.id']
     
     
     c={}
+    #Creating seperate dictionary for all the asset.guid values from asset tab of excel
     for i in self._site_model_sheets.ASSETS:
       c[i['entity_instance_name']]=i['udmi.physical_tag.asset.guid']
-    #new code 
     
-   
     contains_value=[]
+    #Handling multiple values from location.section from asset tab of excel 
     conn_contains = row[self._site_model_columns.SYSTEM_LOCATION].split(',')
     for j in conn_contains:
       j=j.strip()
+      # Checking value present in entity name from dbo.id dictionary
       if j in b :
         
         contains_value.append(b[j])
@@ -107,6 +108,7 @@ class DBODeviceSection(DeviceSection):
       feeds_conn=[]
       for i in feeds:
         i=i.strip()
+        # Checking values are present in system.section dictionary 
         if i in c:
           feeds_conn.append(c[i])
         else:
@@ -120,6 +122,7 @@ class DBODeviceSection(DeviceSection):
       control_conn = []
       for i in controls:
         i=i.strip()
+        # Checking values are present in system.section dictionary 
         if i in c:
           control_conn.append(c[i])
         else:
@@ -131,8 +134,6 @@ class DBODeviceSection(DeviceSection):
   def _fill_device_translations(self, row, device):
     device_payload_type = row[self._site_model_columns.POINTSET_POINTS]
     
-    #flag = ab[self._site_model_columns.FLAG]
-
     for point in self._site_model_sheets.PAYLOAD_TYPES:
 
       if device_payload_type == point[self._site_model_columns.POINTS_TYPE]:
@@ -144,7 +145,7 @@ class DBODeviceSection(DeviceSection):
         flag = point[self._site_model_columns.FLAG]
 
         translation_dict = {}
-
+        #Logic added Missing part for the field udmi.poinset.points based on dbo.flag
         if flag == 'N':
           translation_dict.update({
           "present_value": "\"points." + value + ".present_value\""
@@ -178,11 +179,11 @@ class DBODeviceSection(DeviceSection):
       device_name = row[self._site_model_columns.INSTANCE_NAME]
       device_type = row[self._site_model_columns.DEVICE_TYPE]
       cloud_device_id = row[self._site_model_columns.CLOUD_DEVICE_ID]
-      #new code 
-      device_location = row[self._site_model_columns.SYSTEM_LOCATION]
+      
+      #device_location = row[self._site_model_columns.SYSTEM_LOCATION]
       #device_id = "CDM/" + row[self._site_model_columns.DEVICE_ID]
       device_id =  row[self._site_model_columns.DEVICE_ID]
-      device = Device(device_name, device_type, device_id,device_location,cloud_device_id)
+      device = Device(device_name, device_type, device_id,cloud_device_id)
       
       self._fill_device_translations(row, device)
       self._fill_device_connections(row, device)
