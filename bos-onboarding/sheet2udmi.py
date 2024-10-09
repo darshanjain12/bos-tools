@@ -47,7 +47,7 @@ class SiteModel:
 
     # Used to create the "system" and "physical tag" sections.
     VERSION = "udmi.version"
-    DEVICE_VERSION = "udmi.device_version"
+    #DEVICE_VERSION = "udmi.device_version"
     TIMESTAMP = "udmi.timestamp"
     LOCATION_SITE = "udmi.system.location.site"
     LOCATION_SECTION = "udmi.system.location.section"
@@ -151,7 +151,7 @@ class UDMISiteModelGenerator:
     return {
       "version": device[self._asset_columns.VERSION],
       "timestamp": device[self._asset_columns.TIMESTAMP],
-      "device_version": device[self._asset_columns.DEVICE_VERSION]
+      
     }
 
   def _get_system_section(self, device):
