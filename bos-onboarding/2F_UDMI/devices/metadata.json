@@ -1,0 +1,24 @@
+{
+  "version":"",
+  "timestamp":"",
+  "system":{
+    "location":{
+      "site":"",
+      "section":""
+    },
+    "physical_tag":{
+      "asset":{
+        "guid":"uuid://",
+        "site":"",
+        "name":""
+      }
+    }
+  },
+  "pointset":{
+    "points":{}
+  },
+  "cloud":{
+    "auth_type":"",
+    "connection_type":""
+  }
+}

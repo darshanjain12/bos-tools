@@ -19,11 +19,11 @@ b9f2c8b8-d67e-4b50-824a-7b48ff877429:
   type: FACILITIES/ROOM
   connections:
     a388563d-58e3-4534-b133-19389f6650a4: CONTAINS
-  code: IN-BLR-ANANTA-1ELECRM
+  code: IN-BLR-ANANTA-1-1ELECRM
 
 # Devices
 9e7c08d9-5c7b-47c7-a664-9e01cb070d39:
-  type: GATEWAY/PASSTHROUGH
+  type: GATEWAYS/PASSTHROUGH
   cloud_device_id: 1234
   translation:
     discharge_fan_run_command:
@@ -51,12 +51,12 @@ b9f2c8b8-d67e-4b50-824a-7b48ff877429:
   type: ELECTRICAL/CB_SS
   cloud_device_id: 3444
   translation:
-    run_status: MISSING
-    run_command:
-      present_value: "points.run_command.present_value"
+    run_status:
+      present_value: "points.run_status.present_value"
       states:
         ON: "1"
         OFF: "0"
+    run_command: MISSING
   connections:
     b9f2c8b8-d67e-4b50-824a-7b48ff877429: CONTAINS
   code: CB-2

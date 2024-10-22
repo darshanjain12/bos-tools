@@ -1,0 +1,35 @@
+{
+  "version":"1.4.2",
+  "timestamp":"2024-08-15T09:03:43Z",
+  "device_version":"1.4.2",
+  "system":{
+    "location":{
+      "site":"IN-BLR-ANANTA",
+      "section":"IN-BLR-ANANTA-1-1ELECRM"
+    },
+    "physical_tag":{
+      "asset":{
+        "guid":"uuid://9e7c08d9-5c7b-47c7-a964-9e01cb070d39",
+        "site":"IN-BLR-ANANTA",
+        "name":"CB-2"
+      }
+    }
+  },
+  "pointset":{
+    "points":{
+      "run_status":{
+        "ref":"BV:1.present_value",
+        "units":""
+      }
+    }
+  },
+  "cloud":{
+    "auth_type":"",
+    "connection_type":"GATEWAY"
+  },
+  "gateway":{
+    "proxy_ids":[
+      ""
+    ]
+  }
+}
