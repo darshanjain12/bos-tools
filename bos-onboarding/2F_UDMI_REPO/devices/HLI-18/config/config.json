@@ -1,0 +1,33 @@
+{
+  "timestamp":"2024-08-15T09:03:43Z",
+  "version":"1.4.2",
+  "system":{
+    "min_loglevel":300,
+    "metrics_rate_sec":10,
+    "operation":{}
+  },
+  "pointset":{
+    "points":{},
+    "sample_rate_sec":300
+  },
+  "gateway":{
+    "proxy_ids":[
+      "VAV-216",
+      "VAV-217",
+      "VAV-220",
+      "VAV-221",
+      "VAV-222",
+      "VAV-223",
+      "VAV-224",
+      "VAV-225",
+      "VAV-226",
+      "VAV-227",
+      "VAV-228",
+      "VAV-229",
+      "VAV-230",
+      "VAV-231",
+      "VAV-232",
+      "VAV-233"
+    ]
+  }
+}

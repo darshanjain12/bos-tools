@@ -1,0 +1,25 @@
+{
+  "timestamp":"2024-08-15T09:03:43Z",
+  "version":"1.4.2",
+  "system":{
+    "min_loglevel":300,
+    "metrics_rate_sec":10,
+    "operation":{}
+  },
+  "pointset":{
+    "points":{
+      "water_leak_detection_alarm":{
+        "ref":"BI:1.present_value",
+        "units":""
+      }
+    },
+    "sample_rate_sec":300
+  },
+  "localnet":{
+    "families":{
+      "bacnet":{
+        "addr":"11261"
+      }
+    }
+  }
+}

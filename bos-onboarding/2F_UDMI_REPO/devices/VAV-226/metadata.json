@@ -8,40 +8,40 @@
     },
     "physical_tag":{
       "asset":{
-        "guid":"uuid://65c26d6e-5305-4d38-a802-7192708d2b96",
+        "guid":"uuid://45f33432-72f5-4b04-bc9c-d1d6324b4e5b",
         "site":"IN-BLR-ANANTA",
-        "name":"VAV-233"
+        "name":"VAV-226"
       }
     }
   },
   "pointset":{
     "points":{
       "zone_air_temperature_sensor":{
-        "ref":"AV:755.present_value",
+        "ref":"AV:512.present_value",
         "units":"degrees_celsius"
       },
       "zone_air_cooling_temperature_setpoint":{
-        "ref":"AV:771.present_value",
+        "ref":"AV:528.present_value",
         "units":"degrees_celsius"
       },
       "supply_air_flowrate_sensor":{
-        "ref":"AV:764.present_value",
+        "ref":"AV:558.present_value",
         "units":"cubic_feet_per_minute"
       },
       "zone_occupancy_status":{
-        "ref":"BV:135.present_value",
+        "ref":"BV:37.present_value",
         "units":""
       },
       "supply_air_ventilation_flowrate_requirement":{
-        "ref":"AV:760.present_value",
+        "ref":"AV:517.present_value",
         "units":"cubic_feet_per_minute"
       },
       "supply_air_damper_percentage_command":{
-        "ref":"AV:752.present_value",
+        "ref":"AV:509.present_value",
         "units":"percent"
       },
       "supply_air_cooling_flowrate_capacity":{
-        "ref":"AV:764.present_value",
+        "ref":"AV:514.present_value",
         "units":"cubic_feet_per_minute"
       }
     }

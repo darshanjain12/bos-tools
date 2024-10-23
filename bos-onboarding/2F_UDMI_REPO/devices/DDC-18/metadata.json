@@ -1,0 +1,30 @@
+{
+  "version":"1.4.2",
+  "timestamp":"2024-08-15T09:03:43Z",
+  "system":{
+    "location":{
+      "site":"IN-BLR-ANANTA",
+      "section":"IN-BLR-ANANTA-2"
+    },
+    "physical_tag":{
+      "asset":{
+        "guid":"uuid://1e6add8b-10ad-4130-ba21-7d920468931b",
+        "site":"IN-BLR-ANANTA",
+        "name":"DDC-18"
+      }
+    }
+  },
+  "pointset":{
+    "points":{}
+  },
+  "cloud":{
+    "auth_type":"RS256_X509",
+    "connection_type":"GATEWAY"
+  },
+  "gateway":{
+    "proxy_ids":[
+      "BTU-12",
+      "WLD-14"
+    ]
+  }
+}
