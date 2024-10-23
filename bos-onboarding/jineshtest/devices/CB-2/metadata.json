@@ -24,7 +24,10 @@
   },
   "cloud":{
     "auth_type":"",
-    "connection_type":"GATEWAY"
+    "connection_type":"GATEWAY",
+    "config":{
+      "static_file":"config.json"
+    }
   },
   "gateway":{
     "proxy_ids":[

@@ -252,14 +252,20 @@ class UDMISiteModelGenerator:
       return {
         "cloud": {
           #"auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
-          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
+          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE],
+          "config":{
+            "static_file":"config.json"
+          }
         }
       }
     else:
       return {
         "cloud": {
           "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],
-          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE]
+          "connection_type": device[self._asset_columns.CLOUD_CONNECTION_TYPE],
+          "config":{
+            "static_file":"config.json"
+          }
         }
       }
 
