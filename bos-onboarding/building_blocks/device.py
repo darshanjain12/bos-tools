@@ -68,10 +68,13 @@ class Device:
       self._connections.update(self.Connection(i, value).to_dictionary())
 
   def populate_translations(self, name, value):
+  
     self._translation.update(self.Translation(name, value).to_dictionary())
   ''' This function and class is added for MISSING logic to be 
    implemented in translation as per dbo.flag field in excel '''
+  
   def populate_translations_m(self, value):
+    
     self._translation.update(self.Translation_m(value).to_dictionary())
 
   def populate_links(self, name, value):

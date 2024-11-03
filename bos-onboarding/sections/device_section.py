@@ -138,6 +138,7 @@ class DBODeviceSection(DeviceSection):
 
       if device_payload_type == point[self._site_model_columns.POINTS_TYPE]:
       
+
         name = point[self._site_model_columns.TRANSLATION_FIELDS]
         value = point[self._site_model_columns.POINTSET_POINTS]
         units = point[self._site_model_columns.TRANSLATION_UNITS]
@@ -146,32 +147,36 @@ class DBODeviceSection(DeviceSection):
 
         translation_dict = {}
         #Logic added Missing part for the field udmi.poinset.points based on dbo.flag
-        if flag == 'N':
-          translation_dict.update({
-          "present_value": "\"points." + value + ".present_value\""
-          })
+        if len(name.strip())>0:
+          
+          if flag == 'N':
+            translation_dict.update({
+            "present_value": "\"points." + value + ".present_value\""
+            })
 
-          if not units.isspace() and len(units) > 0:
-            translation_dict.update({
-              "units": {
-                "key": "\"pointset.points." + value + ".units\"",
-                "values": self._get_units_dict(units)
-              }
-            })
+            if not units.isspace() and len(units) > 0:
+              translation_dict.update({
+                "units": {
+                  "key": "\"pointset.points." + value + ".units\"",
+                  "values": self._get_units_dict(units)
+                }
+              })
         
-          if not states.isspace() and len(states) > 0:
-            translation_dict.update({
-              "states": self._get_states_dict(states)
-            })
+            if not states.isspace() and len(states) > 0:
+              translation_dict.update({
+                "states": self._get_states_dict(states)
+              })
         
-          if translation_dict:
-            device.populate_translations(name, translation_dict)
-        else:
-          translation_dict.update({
-            name:"MISSING"
-          })
-          if translation_dict:
-            device.populate_translations_m(translation_dict)
+            if translation_dict:
+              device.populate_translations(name, translation_dict)
+          else:
+            translation_dict.update({
+              name:"MISSING"
+            })
+          
+            if translation_dict:
+              device.populate_translations_m(translation_dict)
+
 
 
   def _create_device(self, row):
