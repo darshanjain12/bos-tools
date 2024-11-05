@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+  #!/usr/bin/env python3
 """
   sheet2dbo.py
 
@@ -37,6 +37,7 @@ from sections.zone_section import DBOZoneSection
 
   Extend as appropriate for your system.
 """
+
 class YAML:
 
   # Default location for all YAML files.
@@ -77,9 +78,10 @@ class YAML:
 
 class DBOYAML(YAML):
     
-  OUTPUT_PATH = "./dbo.yaml"
+  #OUTPUT_PATH = "./dbo.yaml"
 
-  def __init__(self, site_model_path):
+  def __init__(self, site_model_path,outpath):
+    self.outpath=outpath
     DBO_files = DBOFiles(site_model_path)
     self.building_section = DBOBuildingSection(DBO_files)
     self.floor_section = DBOFloorSection(DBO_files)
@@ -91,7 +93,14 @@ class DBOYAML(YAML):
   def create_yaml_file(self):
    
     constant1="INITIALIZE"
-    with open(self.OUTPUT_PATH, "w") as yaml_file:
+    #Creating directory if does not exists
+    if not os.path.exists(self.outpath): 
+      pos=self.outpath.find('/')
+      output_path1=self.outpath[0:pos+1]
+
+      os.makedirs(output_path1, exist_ok=True )
+
+    with open(self.outpath, "w") as yaml_file:
       # Default static values are added as per requirement
       self.write_yaml_section(
         yaml_file, {
@@ -128,7 +137,19 @@ class DBOYAML(YAML):
         self.write_yaml_section(
         yaml_file, self.zone_section.to_dictionary(), "# Zones\n"
       )
-    self._cleanup_yaml()
+    
+    # Yaml cleanup script added for output path 
+    lines = []
+    
+    with open(self.outpath, "r") as yaml_file:
+      for line in yaml_file:
+        lines.append(line)
+    
+    with open(self.outpath, "w") as yaml_file:
+      for line in lines:
+        cleaned_line = re.sub(r"(.*: \{\}|')", "", line)
+        yaml_file.write(cleaned_line)
+    #self._cleanup_yaml()
 
 
 def show_title():
@@ -157,7 +178,11 @@ def main():
   if os.path.exists(args.input):
     print("Started DBO building config generation ...")
     print("Creating DBO yaml file ...")
-    DBOYAML(args.input).create_yaml_file()
+    rfile=DBOYAML(args.input,args.output)
+    
+    #DBOYAML(args.input)
+    rfile.create_yaml_file()
+    
     print("Done.")
   else:
     print("Please run ""%s -h"" to see the program options" % sys.argv[0])
@@ -165,3 +190,4 @@ def main():
 
 if __name__ == "__main__":
   main()
+
