@@ -94,13 +94,31 @@ class DBOYAML(YAML):
    
     constant1="INITIALIZE"
     #Creating directory if does not exists
-    if not os.path.exists(self.outpath): 
-      pos=self.outpath.find('/')
-      output_path1=self.outpath[0:pos+1]
+    
+    if not os.path.exists(self.outpath):
+      #pos=self.outpath.find('/')
+      #output_path1=self.outpath[0:pos+1]
 
+      # Checking values if path contain forward slash
+      #Replacing with backward slashes
+      if self.outpath.find('/')>0:
+        self.outpath=self.outpath.replace('/','\\')
+      
+      # Logic to find seperate directory and file 
+      b=self.outpath.split("\\")
+      file_n=b[len(b)-1]
+      file_name='dbo.yaml'
+      output_path1='\\'.join(b[0:len(b)-1])+'\\'
+      #Path and file based approch 
+      if len(file_n)>0 and 'yaml' in file_n:
+        outpath=output_path1+file_n
+      else:
+        outpath=output_path1+file_name
+    
+      #print(output_path1)
       os.makedirs(output_path1, exist_ok=True )
-
-    with open(self.outpath, "w") as yaml_file:
+      
+    with open(outpath, "w") as yaml_file:
       # Default static values are added as per requirement
       self.write_yaml_section(
         yaml_file, {
@@ -141,11 +159,11 @@ class DBOYAML(YAML):
     # Yaml cleanup script added for output path 
     lines = []
     
-    with open(self.outpath, "r") as yaml_file:
+    with open(outpath, "r") as yaml_file:
       for line in yaml_file:
         lines.append(line)
     
-    with open(self.outpath, "w") as yaml_file:
+    with open(outpath, "w") as yaml_file:
       for line in lines:
         cleaned_line = re.sub(r"(.*: \{\}|')", "", line)
         yaml_file.write(cleaned_line)
