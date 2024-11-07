@@ -37,7 +37,6 @@ from sections.zone_section import DBOZoneSection
 
   Extend as appropriate for your system.
 """
-
 class YAML:
 
   # Default location for all YAML files.
@@ -78,10 +77,9 @@ class YAML:
 
 class DBOYAML(YAML):
     
-  #OUTPUT_PATH = "./dbo.yaml"
+  OUTPUT_PATH = "./dbo.yaml"
 
-  def __init__(self, site_model_path,outpath):
-    self.outpath=outpath
+  def __init__(self, site_model_path):
     DBO_files = DBOFiles(site_model_path)
     self.building_section = DBOBuildingSection(DBO_files)
     self.floor_section = DBOFloorSection(DBO_files)
@@ -93,32 +91,7 @@ class DBOYAML(YAML):
   def create_yaml_file(self):
    
     constant1="INITIALIZE"
-    #Creating directory if does not exists
-    
-    if not os.path.exists(self.outpath):
-      #pos=self.outpath.find('/')
-      #output_path1=self.outpath[0:pos+1]
-
-      # Checking values if path contain forward slash
-      #Replacing with backward slashes
-      if self.outpath.find('/')>0:
-        self.outpath=self.outpath.replace('/','\\')
-      
-      # Logic to find seperate directory and file 
-      b=self.outpath.split("\\")
-      file_n=b[len(b)-1]
-      file_name='dbo.yaml'
-      output_path1='\\'.join(b[0:len(b)-1])+'\\'
-      #Path and file based approch 
-      if len(file_n)>0 and 'yaml' in file_n:
-        outpath=output_path1+file_n
-      else:
-        outpath=output_path1+file_name
-    
-      #print(output_path1)
-      os.makedirs(output_path1, exist_ok=True )
-      
-    with open(outpath, "w") as yaml_file:
+    with open(self.OUTPUT_PATH, "w") as yaml_file:
       # Default static values are added as per requirement
       self.write_yaml_section(
         yaml_file, {
@@ -155,19 +128,7 @@ class DBOYAML(YAML):
         self.write_yaml_section(
         yaml_file, self.zone_section.to_dictionary(), "# Zones\n"
       )
-    
-    # Yaml cleanup script added for output path 
-    lines = []
-    
-    with open(outpath, "r") as yaml_file:
-      for line in yaml_file:
-        lines.append(line)
-    
-    with open(outpath, "w") as yaml_file:
-      for line in lines:
-        cleaned_line = re.sub(r"(.*: \{\}|')", "", line)
-        yaml_file.write(cleaned_line)
-    #self._cleanup_yaml()
+    self._cleanup_yaml()
 
 
 def show_title():
@@ -196,11 +157,7 @@ def main():
   if os.path.exists(args.input):
     print("Started DBO building config generation ...")
     print("Creating DBO yaml file ...")
-    rfile=DBOYAML(args.input,args.output)
-    
-    #DBOYAML(args.input)
-    rfile.create_yaml_file()
-    
+    DBOYAML(args.input).create_yaml_file()
     print("Done.")
   else:
     print("Please run ""%s -h"" to see the program options" % sys.argv[0])
