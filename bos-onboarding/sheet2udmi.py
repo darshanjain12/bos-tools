@@ -259,6 +259,7 @@ class UDMISiteModelGenerator:
         }
       }
     else:
+      
       return {
         "cloud": {
           "auth_type": device[self._asset_columns.CLOUD_AUTH_TYPE],

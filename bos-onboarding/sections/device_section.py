@@ -267,9 +267,10 @@ class DBOVirtualDeviceSection(DeviceSection):
     if row[self._site_model_columns.DEVICE_OR_VIRTUAL] == "Virtual":
       device_name = row[self._site_model_columns.INSTANCE_NAME]
       device_type = row[self._site_model_columns.DEVICE_TYPE]
+      cloud_device_id = row[self._site_model_columns.CLOUD_DEVICE_ID]
       #device_id = "CDM/" + row[self._site_model_columns.DEVICE_ID]
       device_id = row[self._site_model_columns.DEVICE_ID]
-      device = Device(device_name, device_type, device_id)
+      device = Device(device_name, device_type, device_id, cloud_device_id)
       self._fill_device_connections(row, device)
       self._fill_device_links(row, device)
       return device
