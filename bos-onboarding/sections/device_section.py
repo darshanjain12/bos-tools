@@ -249,6 +249,11 @@ class DBOVirtualDeviceSection(DeviceSection):
     linked_devices = self._get_devices_from_string(linked_devices_string)
     points_type = row[self._site_model_columns.LINKS_POINTS]
 
+    link_id = {}
+    for j in self._site_model_sheets.ASSETS:
+      link_id[j['entity_instance_name']]=j['udmi.physical_tag.asset.guid']
+
+
     for linked_device in linked_devices:
       linked_points_dict = {}
       asset_point_type = self._get_asset_point_type_for_device(linked_device)
@@ -261,7 +266,11 @@ class DBOVirtualDeviceSection(DeviceSection):
           linked_points_dict.update({name: value})
       
       if linked_points_dict:
-        device.populate_links(linked_device, linked_points_dict)
+        
+        if linked_device in list(link_id.keys()):
+          linked_device=link_id[linked_device]
+          
+          device.populate_links(linked_device, linked_points_dict)
 
   def _create_device(self, row):
     if row[self._site_model_columns.DEVICE_OR_VIRTUAL] == "Virtual":
@@ -271,8 +280,10 @@ class DBOVirtualDeviceSection(DeviceSection):
       #device_id = "CDM/" + row[self._site_model_columns.DEVICE_ID]
       device_id = row[self._site_model_columns.DEVICE_ID]
       device = Device(device_name, device_type, device_id, cloud_device_id)
-      self._fill_device_connections(row, device)
       self._fill_device_links(row, device)
+      
+      self._fill_device_connections(row, device)
+      
       return device
 
   def _populate_devices(self):
