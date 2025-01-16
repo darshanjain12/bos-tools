@@ -234,7 +234,7 @@ class DBOVirtualDeviceSection(DeviceSection):
 
     conn_contains = row[self._site_model_columns.CONNECTION_CONTAINS].split(',')
     #Handling values 
-    if not ''.join(conn_contains).isspace() and len(feeds) > 0:
+    if not ''.join(conn_contains).isspace() and len(conn_contains) > 0:
     # contains
       b={}
       for i in self._site_model_sheets.LOCATIONS:

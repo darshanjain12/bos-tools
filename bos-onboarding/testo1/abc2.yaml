@@ -2493,6 +2493,9 @@ bd6721bb-dde6-4b6e-95bb-f2589f43416d:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_62
       zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_62
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_62
+  connections:
+    ? 
+    : CONTAINS
   code: VAV-62
 628f1018-6e0b-4ac2-9ae9-e8016763937b:
   type: HVAC/VAV_SD_CSP
@@ -2506,6 +2509,8 @@ bd6721bb-dde6-4b6e-95bb-f2589f43416d:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_63
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_63
       zone_occupancy_status: zone_occupancy_status_63
+  connections:
+    e01b64b5-b964-4fda-8591-da69f57a24f1: CONTAINS
   code: VAV-63
 0592ba08-0f7f-4526-8493-3ef0d75be6db:
   type: HVAC/VAV_SD_CSP
@@ -2519,6 +2524,8 @@ bd6721bb-dde6-4b6e-95bb-f2589f43416d:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_64
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_64
       zone_occupancy_status: zone_occupancy_status_64
+  connections:
+    9678a1b0-5ece-4a3e-a976-77a778ea677c: CONTAINS
   code: VAV-64
 f28687bc-df35-4220-b188-295677be31e3:
   type: HVAC/VAV_SD_CSP
@@ -2532,6 +2539,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_65
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_65
       zone_occupancy_status: zone_occupancy_status_65
+  connections:
+    9e411a1d-eef6-4239-a482-82821bf86284: CONTAINS
   code: VAV-65
 99a74270-41e9-417b-a0fa-34f41c9fa248:
   type: HVAC/VAV_SD_CSP
@@ -2545,6 +2554,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_66
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_66
       zone_occupancy_status: zone_occupancy_status_66
+  connections:
+    364b7e97-b391-4efc-b90c-4f3815616801: CONTAINS
   code: VAV-66
 55bcdfc1-406c-4d81-aa12-4d6db3ad1051:
   type: HVAC/VAV_SD_CSP
@@ -2558,6 +2569,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_70
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_70
       zone_occupancy_status: zone_occupancy_status_70
+  connections:
+    04f8a865-5eb5-46ac-a300-00202aec38cc: CONTAINS
   code: VAV-70
 225f7752-0332-4fd0-8fa8-b111cb136d0c:
   type: HVAC/VAV_SD_CSP
@@ -2571,6 +2584,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_71
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_71
       zone_occupancy_status: zone_occupancy_status_71
+  connections:
+    936e333d-bd7f-4165-9315-8b47166677f6: CONTAINS
   code: VAV-71
 73ea0425-5ac4-45d2-b95e-21726ea5b2c7:
   type: HVAC/VAV_SD_CSP
@@ -2584,6 +2599,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_73
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_73
       zone_occupancy_status: zone_occupancy_status_73
+  connections:
+    cd7520a9-80c5-46c0-aaa8-f683594dca70: CONTAINS
   code: VAV-73
 909830ad-ba54-4878-9c66-56a1049d891d:
   type: HVAC/VAV_SD_CSP
@@ -2597,6 +2614,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_74
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_74
       zone_occupancy_status: zone_occupancy_status_74
+  connections:
+    c3ff1404-26c3-45cd-99d1-9e43e371cf11: CONTAINS
   code: VAV-74
 41e6dc6f-a2e3-4e35-b658-7833df670370:
   type: HVAC/VAV_SD_CSP
@@ -2610,6 +2629,8 @@ f28687bc-df35-4220-b188-295677be31e3:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_75
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_75
       zone_occupancy_status: zone_occupancy_status_75
+  connections:
+    29b6e3ef-adfe-4a69-ae0f-66bcf9cf1c62: CONTAINS
   code: VAV-75
 bd6af595-d44f-40c1-8199-cc70104e3408:
   type: HVAC/VAV_SD_CSP
@@ -2623,6 +2644,8 @@ bd6af595-d44f-40c1-8199-cc70104e3408:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_76
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_76
       zone_occupancy_status: zone_occupancy_status_76
+  connections:
+    db2dbbb0-30e0-4d1a-944b-362a39394f97: CONTAINS
   code: VAV-76
 0721f56b-135e-4357-995b-6e3bc72068e8:
   type: HVAC/VAV_SD_CSP
@@ -2636,6 +2659,8 @@ bd6af595-d44f-40c1-8199-cc70104e3408:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_80
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_80
       zone_occupancy_status: zone_occupancy_status_80
+  connections:
+    d454b1e4-df72-4045-a188-78847cda6597: CONTAINS
   code: VAV-80
 15ed9398-5d70-4485-8268-186212aa7e33:
   type: HVAC/VAV_SD_CSP
@@ -2649,6 +2674,8 @@ bd6af595-d44f-40c1-8199-cc70104e3408:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_83
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_83
       zone_occupancy_status: zone_occupancy_status_83
+  connections:
+    042837c9-bd5f-488a-8707-a556da5b5431: CONTAINS
   code: VAV-83
 db91b06f-c6f9-4519-adea-c73e8ca06448:
   type: HVAC/VAV_SD_CSP
@@ -2662,6 +2689,8 @@ db91b06f-c6f9-4519-adea-c73e8ca06448:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_84
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_84
       zone_occupancy_status: zone_occupancy_status_84
+  connections:
+    042837c9-bd5f-488a-8707-a556da5b5431: CONTAINS
   code: VAV-84
 726506fa-a99f-41bf-87c5-aafa63bc278a:
   type: HVAC/VAV_SD_CSP
@@ -2675,6 +2704,8 @@ db91b06f-c6f9-4519-adea-c73e8ca06448:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_82
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_82
       zone_occupancy_status: zone_occupancy_status_82
+  connections:
+    85d680db-0e33-4d78-b7c9-ecf0e3841e15: CONTAINS
   code: VAV-82
 55665574-e0ba-4721-ae87-cd9cc67a2a75:
   type: HVAC/VAV_SD_CSP
@@ -2688,6 +2719,8 @@ db91b06f-c6f9-4519-adea-c73e8ca06448:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_91
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_91
       zone_occupancy_status: zone_occupancy_status_91
+  connections:
+    1aa16d9a-d3cd-40e0-9429-f14fc5c9d780: CONTAINS
   code: VAV-91
 cdacd32b-b585-46c5-8203-ab26c0d99367:
   type: HVAC/VAV_SD_CSP
@@ -2701,6 +2734,8 @@ cdacd32b-b585-46c5-8203-ab26c0d99367:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_92
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_92
       zone_occupancy_status: zone_occupancy_status_92
+  connections:
+    1e2ed1dc-d76c-4543-84bc-9db1e4debfbb: CONTAINS
   code: VAV-92
 2317c8f9-08df-4e1e-91fe-c99e9cc403fa:
   type: HVAC/VAV_SD_CSP
@@ -2714,6 +2749,8 @@ cdacd32b-b585-46c5-8203-ab26c0d99367:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_72
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_72
       zone_occupancy_status: zone_occupancy_status_72
+  connections:
+    41e0666b-cae9-446b-b2eb-74a9548cc6d7: CONTAINS
   code: VAV-72
 a128caea-e0ac-41f7-8cfe-68baeb1465ee:
   type: HVAC/VAV_SD_CSP
@@ -2727,6 +2764,8 @@ a128caea-e0ac-41f7-8cfe-68baeb1465ee:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_78
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_78
       zone_occupancy_status: zone_occupancy_status_78
+  connections:
+    b5357826-4b37-4e58-b76a-d05a8dd6c0e1: CONTAINS
   code: VAV-78
 e7ae7f83-26d1-496b-b5b9-c74c51c1a511:
   type: HVAC/VAV_SD_CSP
@@ -2740,6 +2779,8 @@ e7ae7f83-26d1-496b-b5b9-c74c51c1a511:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_77
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_77
       zone_occupancy_status: zone_occupancy_status_77
+  connections:
+    c693e838-7f13-4886-b658-916ed342bddf: CONTAINS
   code: VAV-77
 1c5e1792-7d4d-4d10-bc5f-93efe255182c:
   type: HVAC/VAV_SD_CSP
@@ -2753,6 +2794,8 @@ e7ae7f83-26d1-496b-b5b9-c74c51c1a511:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_81
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_81
       zone_occupancy_status: zone_occupancy_status_81
+  connections:
+    9f643450-0dea-4458-8fa0-5e54879a5eb4: CONTAINS
   code: VAV-81
 ccd80d28-421a-4e64-a347-c77d0af81b7e:
   type: HVAC/VAV_SD_CSP
@@ -2766,6 +2809,8 @@ ccd80d28-421a-4e64-a347-c77d0af81b7e:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_88
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_88
       zone_occupancy_status: zone_occupancy_status_88
+  connections:
+    000857d9-0534-480b-9114-b5a44c5ec7bf: CONTAINS
   code: VAV-88
 17340452-9e91-42f7-adda-7e878923bf47:
   type: HVAC/VAV_SD_CSP
@@ -2779,6 +2824,8 @@ ccd80d28-421a-4e64-a347-c77d0af81b7e:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_90
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_90
       zone_occupancy_status: zone_occupancy_status_90
+  connections:
+    6e226430-bf11-4ca3-a4bb-b5a99615cb7a: CONTAINS
   code: VAV-90
 7b4cf265-c2ef-4d01-8e3b-6ba7c10a0e1f:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2794,6 +2841,8 @@ ccd80d28-421a-4e64-a347-c77d0af81b7e:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_67
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_67
       zone_occupancy_status: zone_occupancy_status_67
+  connections:
+    5805082c-9a96-47ef-b4b4-33fc3720ffcd: CONTAINS
   code: VAV-67
 ad7b9ee4-7913-4ec6-b2d3-64c96d278496:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2809,6 +2858,8 @@ ad7b9ee4-7913-4ec6-b2d3-64c96d278496:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_85
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_85
       zone_occupancy_status: zone_occupancy_status_85
+  connections:
+    b7f5572c-ea81-4827-8660-ac2cfd00af20: CONTAINS
   code: VAV-85
 3886dfc7-943f-436f-bcb0-2b0505ac32be:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2824,6 +2875,8 @@ ad7b9ee4-7913-4ec6-b2d3-64c96d278496:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_89
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_89
       zone_occupancy_status: zone_occupancy_status_89
+  connections:
+    47510042-9632-4d30-b49d-9f73c022929e: CONTAINS
   code: VAV-89
 d60b8777-b4d1-4678-b8fb-d6a8a4790ac3:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2839,6 +2892,8 @@ d60b8777-b4d1-4678-b8fb-d6a8a4790ac3:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_87
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_87
       zone_occupancy_status: zone_occupancy_status_87
+  connections:
+    bf638b75-0c80-4cb7-8145-bff7f5dc653a: CONTAINS
   code: VAV-87
 ea118fb9-5deb-44f0-9d1a-f53412ae434a:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2854,6 +2909,8 @@ ea118fb9-5deb-44f0-9d1a-f53412ae434a:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_86
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_86
       zone_occupancy_status: zone_occupancy_status_86
+  connections:
+    d2090dcd-18bb-4a7a-88ad-f72d59d1018b: CONTAINS
   code: VAV-86
 33a7f91d-73e3-475d-9ddc-aa84cc2ad565:
   type: HVAC/VAV_SD_CSP
@@ -2867,6 +2924,8 @@ ea118fb9-5deb-44f0-9d1a-f53412ae434a:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_68
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_68
       zone_occupancy_status: zone_occupancy_status_68
+  connections:
+    bce4681e-0fa2-42e5-8856-6914d81ce8d3: CONTAINS
   code: VAV-68
 33d428b1-bfbf-4399-8ca9-a53464ca5b0e:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2882,6 +2941,8 @@ ea118fb9-5deb-44f0-9d1a-f53412ae434a:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_69
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_69
       zone_occupancy_status: zone_occupancy_status_69
+  connections:
+    5671a80b-7d85-4c31-b839-b77bb067ec61: CONTAINS
   code: VAV-69
 ac3d5d90-0b52-4024-b015-617f11c7c701:
   type: HVAC/VAV_SD_CSP_CO2C
@@ -2897,5 +2958,7 @@ ac3d5d90-0b52-4024-b015-617f11c7c701:
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_79
       zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_79
       zone_occupancy_status: zone_occupancy_status_79
+  connections:
+    d0ad6078-c25e-40f9-af04-01623df0a3db: CONTAINS
   code: VAV-79
 
