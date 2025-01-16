@@ -1,0 +1,2964 @@
+# Heading
+CONFIG_METADATA:
+  operation: INITIALIZE
+
+# Building
+d9fd1270-218c-4998-ab93-c7be5bd22f31:
+  type: FACILITIES/BUILDING
+  code: IN-BLR-ANANTA
+
+# Floor
+28ed1456-9605-452d-8caf-164ddc4a7081:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-2
+f48f4fb0-514b-4d02-a881-eb42810642e7:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-3
+67e9d7ee-0633-4828-9849-1162d97d202e:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-4
+f24d937e-9a57-41f2-94b0-450ad3334f94:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-5
+6453531b-e7dc-49ab-b362-a4edb2a9a5b0:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-6
+a3a1ebf1-9cba-447d-9131-e719a844aa51:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-7
+099238a2-c9bb-4f16-9a70-89f68f46ac58:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-8
+667b66e0-33f4-4a0c-91a4-73831babd0f2:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-1
+
+# Rooms
+ece78ab4-747d-42f3-8594-6081c1481319:
+  type: FACILITIES/ROOM
+  connections:
+    28ed1456-9605-452d-8caf-164ddc4a7081: CONTAINS
+  code: IN-BLR-ANANTA-2-1ELECRM
+31c00f0c-8dcd-4da1-93fa-ab3e0999ff0a:
+  type: FACILITIES/ROOM
+  connections:
+    f48f4fb0-514b-4d02-a881-eb42810642e7: CONTAINS
+  code: IN-BLR-ANANTA-3-1ELECRM
+85c2e7f8-7fd8-4306-8751-ea23ad22c2a3:
+  type: FACILITIES/ROOM
+  connections:
+    67e9d7ee-0633-4828-9849-1162d97d202e: CONTAINS
+  code: IN-BLR-ANANTA-4-1ELECRM
+705052ff-e789-422e-b339-59ffaa4fbf8f:
+  type: FACILITIES/ROOM
+  connections:
+    f24d937e-9a57-41f2-94b0-450ad3334f94: CONTAINS
+  code: IN-BLR-ANANTA-5-1ELECRM
+785baecd-d639-45f8-bd34-4b9026cfbcdb:
+  type: FACILITIES/ROOM
+  connections:
+    6453531b-e7dc-49ab-b362-a4edb2a9a5b0: CONTAINS
+  code: IN-BLR-ANANTA-6-1ELECRM
+551cee7a-0158-4f6c-981b-760fb09083c1:
+  type: FACILITIES/ROOM
+  connections:
+    a3a1ebf1-9cba-447d-9131-e719a844aa51: CONTAINS
+  code: IN-BLR-ANANTA-7-1ELECRM
+837fa9ba-999d-4b9c-ba95-73592e7b5456:
+  type: FACILITIES/ROOM
+  connections:
+    099238a2-c9bb-4f16-9a70-89f68f46ac58: CONTAINS
+  code: IN-BLR-ANANTA-8-1ELECRM
+530d28fd-0075-4ffa-a13c-3f1691daa256:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1ELECRM
+e01b64b5-b964-4fda-8591-da69f57a24f1:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C120
+9678a1b0-5ece-4a3e-a976-77a778ea677c:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C123
+9e411a1d-eef6-4239-a482-82821bf86284:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C125
+364b7e97-b391-4efc-b90c-4f3815616801:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C33
+5805082c-9a96-47ef-b4b4-33fc3720ffcd:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C36
+bce4681e-0fa2-42e5-8856-6914d81ce8d3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C32
+5671a80b-7d85-4c31-b839-b77bb067ec61:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C34
+04f8a865-5eb5-46ac-a300-00202aec38cc:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C128
+936e333d-bd7f-4165-9315-8b47166677f6:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C096
+41e0666b-cae9-446b-b2eb-74a9548cc6d7:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C38
+d18f471e-abe8-42be-87e4-86b8826a91bc:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C39
+cd7520a9-80c5-46c0-aaa8-f683594dca70:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C37
+c3ff1404-26c3-45cd-99d1-9e43e371cf11:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C56
+29b6e3ef-adfe-4a69-ae0f-66bcf9cf1c62:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C101
+d0ad6078-c25e-40f9-af04-01623df0a3db:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C16
+c5e3e876-846f-400c-a348-b3e7f6c8b4f6:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C17
+b5357826-4b37-4e58-b76a-d05a8dd6c0e1:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C19
+12d883f1-fcc4-4d89-93e7-e7233c09fa1b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C20
+c693e838-7f13-4886-b658-916ed342bddf:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C27
+9734c97b-8ae9-4f6c-b38d-49999d9b55d4:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C28
+db2dbbb0-30e0-4d1a-944b-362a39394f97:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C183
+d454b1e4-df72-4045-a188-78847cda6597:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-170
+9f643450-0dea-4458-8fa0-5e54879a5eb4:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C25
+1131f754-a8be-4cd9-aac7-d356b18bf43c:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C26
+042837c9-bd5f-488a-8707-a556da5b5431:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C15
+b7f5572c-ea81-4827-8660-ac2cfd00af20:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C12
+85d680db-0e33-4d78-b7c9-ecf0e3841e15:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C107
+1aa16d9a-d3cd-40e0-9429-f14fc5c9d780:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C105
+1e2ed1dc-d76c-4543-84bc-9db1e4debfbb:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C47
+47510042-9632-4d30-b49d-9f73c022929e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C14
+000857d9-0534-480b-9114-b5a44c5ec7bf:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C21
+14fe449a-b959-4aff-a864-06b8ee28a981:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C22
+bf638b75-0c80-4cb7-8145-bff7f5dc653a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C13
+d2090dcd-18bb-4a7a-88ad-f72d59d1018b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C18
+6e226430-bf11-4ca3-a4bb-b5a99615cb7a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C23
+4eae46a7-db92-433b-96f0-e843cea3f022:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C24
+98766a65-d1c8-441d-bcab-540e63763309:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C10
+0da00f42-b98e-4887-ae22-c3be3e7718bf:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C11
+b02218b4-2a58-4b19-b5df-738361d5bd4c:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C9
+e1bd07ce-def2-4ec0-baec-df1c783a44f3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C8
+f2df29f7-cf56-47e4-957c-c699ad0ae52d:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C3
+4c5ad67d-7699-4ea7-a80f-467cd8f2ae9b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B17
+119b4dd0-82be-4a74-9185-766885d0709a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B093
+1cbc6efb-0c1d-49cb-a1de-6c7ebd9522ee:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C179
+0bd43fe8-801d-4fd1-af14-ff52e7a64cf0:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B20
+60a74150-dac7-4f0b-a5e1-9edb66a6a5b8:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B2
+2ba0caa7-f4bb-47a9-a287-c0cc900ff7ed:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B3
+203be7e6-07ad-4473-ab21-85154b408555:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B4
+376ad24d-d2b6-4b98-85cd-58b9ce5bc530:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B6
+d8823305-2971-4378-bad6-a2ea8d2c4d0e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B11
+da3490e6-90cc-42bb-a585-269095ec8671:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B13
+b8f86cc0-6313-4891-969f-94044b6b1de8:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B10
+e3849e7a-f0d1-4873-950e-5f246d0d209b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-B12
+4acde6c6-566f-4b66-b8fc-502b5159720e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C6
+c6071a03-5d08-4a77-b1cf-03ca8dbf8270:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C7
+1ab76788-0702-4332-8008-12ba7a1b1408:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C4
+72adc40b-39ad-442d-969d-09ebbb57bd29:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C5
+02fc5810-cef2-424f-8ce0-5d02b1c7fab3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C177
+efbdcb82-9d22-49a9-a027-5162762919a5:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C178
+c0a3dd08-e959-4fc3-8ae3-052e1f41646e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C161
+236d27f2-415c-4c74-85c5-e76355104dea:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C028
+3b312ff9-1cf1-44c0-bac2-ab086f369c05:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C025
+46fa7bea-5342-4ef1-9918-d2af359c983e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C42
+dc098c74-a05a-4958-a7aa-78579e787a27:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C40
+74d17334-0a4a-4057-906e-3521268d8106:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C021
+16b664e9-7306-4493-b865-fa087196a3dc:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-D52
+1d891718-1c64-4f99-aadc-4d87b2508dd1:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1C001
+9886c893-eae1-4191-9ab0-09bd940a8398:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B007
+7acc3f83-bb91-4ea2-83fa-1d99c4ec625f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B26
+3bf43e93-13c4-4b9a-a2c9-df9c7730eb28:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B9
+91a08c9f-3383-436a-a019-71fb3c7f383b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B049
+2f8fba18-ebde-45ed-b23d-1128ce6a48b9:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B024
+74ac40a3-088b-49f1-ba2f-69faea551217:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B045
+0c927fc2-7289-4c50-938d-a94c1a8a6164:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B32
+499aebc1-32ea-4c29-837f-a18c237e9d41:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B26
+27a81ce3-0e2f-49bb-b1cd-97d9c0056fae:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B35
+feea158f-ba0b-431c-8ca1-324a8a15c6e9:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1B036
+e0622dc8-432d-4a3a-a411-1c74591d7ba2:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D168
+03de380b-3611-4880-9b71-85bac774d902:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D39
+bb3f3711-6483-4681-aec1-1db3a8f7cde7:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D38
+b51444ac-e6a3-42a0-9019-349986ed75ac:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D42
+cd92d7a3-71e6-4b59-aba2-7aff952a9873:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D171
+e131d90a-faa2-4f76-84f6-f15adb46a969:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D173
+6cb08bc1-7ddb-4421-a791-6e83e160b1bf:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D44
+93402582-e1ba-4297-b4c8-1f41a5999741:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D45
+a4f0b044-bef3-4337-b45f-f36b161b573a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D43
+39f1904e-11b5-453e-9c45-a701c073eae1:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D48
+4e08054b-f47b-479a-a7f7-c60e13adfcaa:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D195
+0ddbb06d-6f48-44cb-a2af-be15bfa36197:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D207
+0b5d66ce-d4fc-42f8-9a85-fcefbae807f8:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D221
+fd218480-156a-4eaa-b9f4-5711c79ebabe:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D51
+7031f063-6884-4208-889c-4efe7037bdf3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D135
+bb28c7da-c7c3-4f7b-b9d9-13e85e31ef8f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D138
+57785df1-2c34-4c6c-b162-f0059df90012:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-182
+33bea111-7eb6-4b79-be94-c2d2dfe4d157:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D109
+e506dcac-00c0-46be-9f9c-0983deeff56e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D40
+ab28c054-ed47-4104-97c0-a8d6b227acdb:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D41
+472195b9-d0a4-497c-9f05-9905e676ddab:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D36
+420ff8e9-c3e2-4a91-97fe-ce84e768832e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D37
+abe646af-c5a3-4305-aef9-434a09482bce:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D30
+e1eb6f2f-1b19-4736-96f8-5c61a230df17:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D31
+4529cb73-7da2-4ce0-8642-0893eded133b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D32
+091b7f4c-790d-4b49-aa04-4176e42643d8:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D35
+31d05c90-6b67-49ca-a93d-3c4b7184626f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D75
+7689e9b8-8f49-4679-bdf1-c4da111560d5:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D20
+a4f0a6b8-71fd-41ef-a9d9-1b5cebbe1c6f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D21
+9cd67d8c-b012-467a-90af-20f2423b2d3f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D25
+07cdd266-0d02-4474-99d4-1259bddb4e5c:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D28
+2a804366-5caf-4d06-99e5-145d01c4972d:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D29
+11c4e618-6e53-4460-8256-892d2644fd48:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D89
+8c1c5f0e-3dae-4842-932e-725840ea63c1:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D84
+245beb84-f302-478b-9a67-3c3b7bd52c1c:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D023
+43625c62-a371-498f-bc2d-887898f8dac2:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D67
+fa9a5df6-7729-4963-9d3c-ed21f432207f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D63
+327be279-8931-414b-8ce2-1dab540335aa:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D59
+935ad00e-64bf-4f64-8420-2710fa2feafb:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D5
+b6c7073c-d06d-41e0-94f9-a329e7cc1922:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D4
+319516e8-4d61-45d0-ae07-2faa851eaaa4:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D3
+7d2a2af0-38e9-45e3-bc29-b8eb090a879a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D2
+4efc5485-1c18-46cb-896a-0896fa7f13a3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D1
+30aca602-9314-4a66-910e-7d1c1bb568d5:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C101
+62e17742-17f8-4673-b414-509637bc4e58:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D8
+35f59ed8-e7ff-44ea-822c-91fbc25c152d:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D7
+6cba460b-41d5-43f7-8467-8d59826fd10f:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D9
+1c0b5927-22aa-4610-9e0c-42e4e2d8a2d0:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D69
+0a781069-95ae-4f39-9c31-de60d61a48e2:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D11
+7ec367bb-59fb-4c10-8942-a2ac5a4c97d8:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D71
+25dce6a2-ba06-463b-a508-51e6643311df:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D17
+911add36-ff42-4fc5-80e6-4f733286d9ba:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D13
+f9df86a6-cee8-4c05-a029-17f317e8cdfc:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C115
+e34ac3c6-1334-4b4a-b898-3700ffb1d614:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C110
+fd5b4c19-4ec0-4dc4-a9a0-a6e6dd76ce92:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C112
+59eb6c69-8fd4-4c7f-b653-9e604de9e32e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C113
+aeea1cf5-0d16-40c6-949b-8996bd7e053c:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D7
+8b291561-46f7-411f-9626-aa279de83ebe:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A17
+ac3f1e1e-abea-416e-8586-0995aa173846:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A24
+8f6d6600-7cad-4a47-b086-71b65f248c3b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A6
+e481ea15-22fa-4cc7-85c7-96c3ccafac97:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A7
+c8bddddf-54ef-4b2a-be53-2c9a0c09f6cf:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A25
+e68bc33f-3aa4-4bea-b111-57638fa0e975:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A12
+a9ccb62d-6eee-4178-908a-5bf9b3d1912a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A13
+946f8479-0ed0-42ee-be94-6dccaad3474a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A14
+0c439b64-9455-4c6a-850d-dd924efdcbe0:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D035
+368e4091-6683-4573-8272-b93d8c0abe18:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D18
+b94a7775-2c5f-48ab-92a2-f41d1c7a42a2:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D17
+cc9268b4-4eea-468e-908c-7b374404de10:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D16
+c62f7348-4f9a-4a1a-8a3b-16fd5d7873eb:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D15
+8c311ba2-8693-4ef3-a586-d1353e241063:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D14
+c2adbb53-9f6b-4411-8807-fc9fc142e381:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D74
+fd1618a4-b02a-43c3-8b39-0e82265e7857:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1D093
+f807de1e-87b2-4f13-a484-680f0c2afeb3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A33
+b8604724-6643-404f-b009-f12b24678efb:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A34
+33170c86-e35d-4b71-8729-1dd7aa30f97a:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A32
+8d5b78fe-25bc-4aee-a721-2389134cf379:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A10
+4e8f5d6a-2d2a-4a42-b9e4-5f8d153ad70e:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A11
+5b33ab3e-b65c-427a-96f3-066945559d66:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A36
+e67aa6ce-7e26-49ca-a7eb-f6a834cfef61:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A39
+31175f9e-fb86-44d9-90df-58aa71778565:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A37
+c7df0e31-9ec3-48ea-8013-8965f1733514:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-C108
+cd0279ee-5daa-4fbb-af4f-7a180722a3a3:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A38
+30b58da0-8b80-42a0-b0c6-4721584cac7b:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A16
+3cedcb2c-1888-4aac-8b98-f134f98c93a1:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A40
+cc42b1dc-8703-456a-8dcd-4859c9658673:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A42
+6d48b9d5-6e70-407d-aeb4-92b7416557da:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-1A43
+aa3fc8aa-85e7-4ad0-a3e2-6fe096a64f77:
+  type: FACILITIES/ROOM
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: IN-BLR-ANANTA-1-GL48
+
+# Devices
+c58ddbe1-1637-4c79-91e2-39b0ea98b847:
+  type: GATEWAYS/PASSTHROUGH
+  cloud_device_id: 
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: HLI-12
+3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+  type: GATEWAYS/PASSTHROUGH
+  cloud_device_id: 1735869320140
+  translation:
+    supply_air_damper_percentage_command_62:
+      present_value: "points.supply_air_damper_percentage_command_62.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_62.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_62:
+      present_value: "points.supply_air_flowrate_setpoint_62.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_62.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_62:
+      present_value: "points.supply_air_cooling_flowrate_capacity_62.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_62.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_62:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_62.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_62.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_62:
+      present_value: "points.supply_air_flowrate_sensor_62.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_62.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_62:
+      present_value: "points.zone_air_co2_concentration_sensor_62.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_62.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_62:
+      present_value: "points.zone_air_co2_concentration_setpoint_62.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_62.units"
+        values:
+          parts_per_million: parts_per_million
+    supply_air_damper_percentage_command_63:
+      present_value: "points.supply_air_damper_percentage_command_63.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_63.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_63:
+      present_value: "points.supply_air_flowrate_setpoint_63.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_63.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_63:
+      present_value: "points.zone_air_temperature_sensor_63.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_63.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_63:
+      present_value: "points.supply_air_cooling_flowrate_capacity_63.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_63.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_63:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_63.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_63.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_63:
+      present_value: "points.supply_air_flowrate_sensor_63.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_63.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_63:
+      present_value: "points.zone_air_cooling_temperature_setpoint_63.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_63.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_63:
+      present_value: "points.zone_occupancy_status_63.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_64:
+      present_value: "points.supply_air_damper_percentage_command_64.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_64.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_64:
+      present_value: "points.supply_air_flowrate_setpoint_64.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_64.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_64:
+      present_value: "points.zone_air_temperature_sensor_64.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_64.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_64:
+      present_value: "points.supply_air_cooling_flowrate_capacity_64.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_64.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_64:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_64.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_64.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_64:
+      present_value: "points.supply_air_flowrate_sensor_64.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_64.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_64:
+      present_value: "points.zone_air_cooling_temperature_setpoint_64.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_64.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_64:
+      present_value: "points.zone_occupancy_status_64.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_65:
+      present_value: "points.supply_air_damper_percentage_command_65.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_65.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_65:
+      present_value: "points.supply_air_flowrate_setpoint_65.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_65.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_65:
+      present_value: "points.zone_air_temperature_sensor_65.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_65.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_65:
+      present_value: "points.supply_air_cooling_flowrate_capacity_65.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_65.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_65:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_65.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_65.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_65:
+      present_value: "points.supply_air_flowrate_sensor_65.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_65.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_65:
+      present_value: "points.zone_air_cooling_temperature_setpoint_65.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_65.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_65:
+      present_value: "points.zone_occupancy_status_65.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_66:
+      present_value: "points.supply_air_damper_percentage_command_66.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_66.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_66:
+      present_value: "points.supply_air_flowrate_setpoint_66.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_66.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_66:
+      present_value: "points.zone_air_temperature_sensor_66.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_66.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_66:
+      present_value: "points.supply_air_cooling_flowrate_capacity_66.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_66.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_66:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_66.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_66.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_66:
+      present_value: "points.supply_air_flowrate_sensor_66.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_66.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_66:
+      present_value: "points.zone_air_cooling_temperature_setpoint_66.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_66.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_66:
+      present_value: "points.zone_occupancy_status_66.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_70:
+      present_value: "points.supply_air_damper_percentage_command_70.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_70.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_70:
+      present_value: "points.supply_air_flowrate_setpoint_70.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_70.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_70:
+      present_value: "points.zone_air_temperature_sensor_70.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_70.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_70:
+      present_value: "points.supply_air_cooling_flowrate_capacity_70.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_70.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_70:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_70.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_70.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_70:
+      present_value: "points.supply_air_flowrate_sensor_70.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_70.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_70:
+      present_value: "points.zone_air_cooling_temperature_setpoint_70.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_70.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_70:
+      present_value: "points.zone_occupancy_status_70.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_71:
+      present_value: "points.supply_air_damper_percentage_command_71.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_71.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_71:
+      present_value: "points.supply_air_flowrate_setpoint_71.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_71.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_71:
+      present_value: "points.zone_air_temperature_sensor_71.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_71.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_71:
+      present_value: "points.supply_air_cooling_flowrate_capacity_71.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_71.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_71:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_71.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_71.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_71:
+      present_value: "points.supply_air_flowrate_sensor_71.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_71.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_71:
+      present_value: "points.zone_air_cooling_temperature_setpoint_71.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_71.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_71:
+      present_value: "points.zone_occupancy_status_71.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_73:
+      present_value: "points.supply_air_damper_percentage_command_73.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_73.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_73:
+      present_value: "points.supply_air_flowrate_setpoint_73.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_73.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_73:
+      present_value: "points.zone_air_temperature_sensor_73.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_73.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_73:
+      present_value: "points.supply_air_cooling_flowrate_capacity_73.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_73.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_73:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_73.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_73.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_73:
+      present_value: "points.supply_air_flowrate_sensor_73.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_73.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_73:
+      present_value: "points.zone_air_cooling_temperature_setpoint_73.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_73.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_73:
+      present_value: "points.zone_occupancy_status_73.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_74:
+      present_value: "points.supply_air_damper_percentage_command_74.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_74.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_74:
+      present_value: "points.supply_air_flowrate_setpoint_74.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_74.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_74:
+      present_value: "points.zone_air_temperature_sensor_74.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_74.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_74:
+      present_value: "points.supply_air_cooling_flowrate_capacity_74.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_74.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_74:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_74.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_74.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_74:
+      present_value: "points.supply_air_flowrate_sensor_74.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_74.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_74:
+      present_value: "points.zone_air_cooling_temperature_setpoint_74.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_74.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_74:
+      present_value: "points.zone_occupancy_status_74.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_75:
+      present_value: "points.supply_air_damper_percentage_command_75.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_75.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_75:
+      present_value: "points.supply_air_flowrate_setpoint_75.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_75.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_75:
+      present_value: "points.zone_air_temperature_sensor_75.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_75.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_75:
+      present_value: "points.supply_air_cooling_flowrate_capacity_75.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_75.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_75:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_75.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_75.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_75:
+      present_value: "points.supply_air_flowrate_sensor_75.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_75.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_75:
+      present_value: "points.zone_air_cooling_temperature_setpoint_75.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_75.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_75:
+      present_value: "points.zone_occupancy_status_75.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_76:
+      present_value: "points.supply_air_damper_percentage_command_76.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_76.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_76:
+      present_value: "points.supply_air_flowrate_setpoint_76.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_76.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_76:
+      present_value: "points.zone_air_temperature_sensor_76.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_76.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_76:
+      present_value: "points.supply_air_cooling_flowrate_capacity_76.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_76.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_76:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_76.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_76.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_76:
+      present_value: "points.supply_air_flowrate_sensor_76.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_76.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_76:
+      present_value: "points.zone_air_cooling_temperature_setpoint_76.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_76.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_76:
+      present_value: "points.zone_occupancy_status_76.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_80:
+      present_value: "points.supply_air_damper_percentage_command_80.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_80.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_80:
+      present_value: "points.supply_air_flowrate_setpoint_80.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_80.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_80:
+      present_value: "points.zone_air_temperature_sensor_80.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_80.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_80:
+      present_value: "points.supply_air_cooling_flowrate_capacity_80.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_80.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_80:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_80.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_80.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_80:
+      present_value: "points.supply_air_flowrate_sensor_80.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_80.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_80:
+      present_value: "points.zone_air_cooling_temperature_setpoint_80.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_80.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_80:
+      present_value: "points.zone_occupancy_status_80.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: CGW-120201
+75102409-d354-4ad5-8904-6dcd60fcb0ec:
+  type: GATEWAYS/PASSTHROUGH
+  cloud_device_id: 1735869319344
+  translation:
+    supply_air_damper_percentage_command_83:
+      present_value: "points.supply_air_damper_percentage_command_83.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_83.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_83:
+      present_value: "points.supply_air_flowrate_setpoint_83.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_83.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_83:
+      present_value: "points.zone_air_temperature_sensor_83.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_83.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_83:
+      present_value: "points.supply_air_cooling_flowrate_capacity_83.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_83.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_83:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_83.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_83.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_83:
+      present_value: "points.supply_air_flowrate_sensor_83.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_83.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_83:
+      present_value: "points.zone_air_cooling_temperature_setpoint_83.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_83.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_83:
+      present_value: "points.zone_occupancy_status_83.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_84:
+      present_value: "points.supply_air_damper_percentage_command_84.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_84.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_84:
+      present_value: "points.supply_air_flowrate_setpoint_84.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_84.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_84:
+      present_value: "points.zone_air_temperature_sensor_84.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_84.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_84:
+      present_value: "points.supply_air_cooling_flowrate_capacity_84.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_84.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_84:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_84.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_84.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_84:
+      present_value: "points.supply_air_flowrate_sensor_84.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_84.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_84:
+      present_value: "points.zone_air_cooling_temperature_setpoint_84.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_84.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_84:
+      present_value: "points.zone_occupancy_status_84.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_82:
+      present_value: "points.supply_air_damper_percentage_command_82.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_82.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_82:
+      present_value: "points.supply_air_flowrate_setpoint_82.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_82.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_82:
+      present_value: "points.zone_air_temperature_sensor_82.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_82.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_82:
+      present_value: "points.supply_air_cooling_flowrate_capacity_82.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_82.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_82:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_82.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_82.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_82:
+      present_value: "points.supply_air_flowrate_sensor_82.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_82.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_82:
+      present_value: "points.zone_air_cooling_temperature_setpoint_82.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_82.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_82:
+      present_value: "points.zone_occupancy_status_82.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_91:
+      present_value: "points.supply_air_damper_percentage_command_91.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_91.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_91:
+      present_value: "points.supply_air_flowrate_setpoint_91.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_91.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_91:
+      present_value: "points.zone_air_temperature_sensor_91.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_91.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_91:
+      present_value: "points.supply_air_cooling_flowrate_capacity_91.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_91.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_91:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_91.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_91.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_91:
+      present_value: "points.supply_air_flowrate_sensor_91.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_91.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_91:
+      present_value: "points.zone_air_cooling_temperature_setpoint_91.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_91.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_91:
+      present_value: "points.zone_occupancy_status_91.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_92:
+      present_value: "points.supply_air_damper_percentage_command_92.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_92.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_92:
+      present_value: "points.supply_air_flowrate_setpoint_92.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_92.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_92:
+      present_value: "points.zone_air_temperature_sensor_92.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_92.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_92:
+      present_value: "points.supply_air_cooling_flowrate_capacity_92.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_92.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_92:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_92.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_92.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_92:
+      present_value: "points.supply_air_flowrate_sensor_92.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_92.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_92:
+      present_value: "points.zone_air_cooling_temperature_setpoint_92.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_92.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_92:
+      present_value: "points.zone_occupancy_status_92.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_72:
+      present_value: "points.zone_air_temperature_sensor_72.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_72.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_72:
+      present_value: "points.supply_air_damper_percentage_command_72.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_72.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_72:
+      present_value: "points.supply_air_flowrate_setpoint_72.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_72.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_72:
+      present_value: "points.supply_air_cooling_flowrate_capacity_72.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_72.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_72:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_72.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_72.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_72:
+      present_value: "points.supply_air_flowrate_sensor_72.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_72.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_72:
+      present_value: "points.zone_air_cooling_temperature_setpoint_72.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_72.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_72:
+      present_value: "points.zone_occupancy_status_72.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_78:
+      present_value: "points.zone_air_temperature_sensor_78.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_78.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_78:
+      present_value: "points.supply_air_damper_percentage_command_78.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_78.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_78:
+      present_value: "points.supply_air_flowrate_setpoint_78.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_78.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_78:
+      present_value: "points.supply_air_cooling_flowrate_capacity_78.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_78.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_78:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_78.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_78.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_78:
+      present_value: "points.supply_air_flowrate_sensor_78.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_78.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_78:
+      present_value: "points.zone_air_cooling_temperature_setpoint_78.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_78.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_78:
+      present_value: "points.zone_occupancy_status_78.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_77:
+      present_value: "points.zone_air_temperature_sensor_77.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_77.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_77:
+      present_value: "points.supply_air_damper_percentage_command_77.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_77.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_77:
+      present_value: "points.supply_air_flowrate_setpoint_77.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_77.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_77:
+      present_value: "points.supply_air_cooling_flowrate_capacity_77.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_77.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_77:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_77.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_77.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_77:
+      present_value: "points.supply_air_flowrate_sensor_77.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_77.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_77:
+      present_value: "points.zone_air_cooling_temperature_setpoint_77.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_77.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_77:
+      present_value: "points.zone_occupancy_status_77.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_81:
+      present_value: "points.zone_air_temperature_sensor_81.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_81.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_81:
+      present_value: "points.supply_air_damper_percentage_command_81.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_81.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_81:
+      present_value: "points.supply_air_flowrate_setpoint_81.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_81.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_81:
+      present_value: "points.supply_air_cooling_flowrate_capacity_81.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_81.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_81:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_81.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_81.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_81:
+      present_value: "points.supply_air_flowrate_sensor_81.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_81.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_81:
+      present_value: "points.zone_air_cooling_temperature_setpoint_81.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_81.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_81:
+      present_value: "points.zone_occupancy_status_81.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_88:
+      present_value: "points.zone_air_temperature_sensor_88.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_88.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_88:
+      present_value: "points.supply_air_damper_percentage_command_88.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_88.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_88:
+      present_value: "points.supply_air_flowrate_setpoint_88.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_88.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_88:
+      present_value: "points.supply_air_cooling_flowrate_capacity_88.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_88.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_88:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_88.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_88.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_88:
+      present_value: "points.supply_air_flowrate_sensor_88.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_88.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_88:
+      present_value: "points.zone_air_cooling_temperature_setpoint_88.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_88.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_88:
+      present_value: "points.zone_occupancy_status_88.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_90:
+      present_value: "points.zone_air_temperature_sensor_90.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_90.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_90:
+      present_value: "points.supply_air_damper_percentage_command_90.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_90.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_90:
+      present_value: "points.supply_air_flowrate_setpoint_90.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_90.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_90:
+      present_value: "points.supply_air_cooling_flowrate_capacity_90.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_90.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_90:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_90.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_90.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_90:
+      present_value: "points.supply_air_flowrate_sensor_90.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_90.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_90:
+      present_value: "points.zone_air_cooling_temperature_setpoint_90.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_90.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_90:
+      present_value: "points.zone_occupancy_status_90.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_67:
+      present_value: "points.supply_air_damper_percentage_command_67.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_67.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_67:
+      present_value: "points.supply_air_flowrate_setpoint_67.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_67.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_67:
+      present_value: "points.zone_air_temperature_sensor_67.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_67.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_67:
+      present_value: "points.supply_air_cooling_flowrate_capacity_67.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_67.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_67:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_67.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_67.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_67:
+      present_value: "points.supply_air_flowrate_sensor_67.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_67.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_67:
+      present_value: "points.zone_air_co2_concentration_sensor_67.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_67.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_67:
+      present_value: "points.zone_air_co2_concentration_setpoint_67.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_67.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_67:
+      present_value: "points.zone_air_cooling_temperature_setpoint_67.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_67.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_67:
+      present_value: "points.zone_occupancy_status_67.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: CGW-120202
+bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+  type: GATEWAYS/PASSTHROUGH
+  cloud_device_id: 1735869328769
+  translation:
+    supply_air_damper_percentage_command_85:
+      present_value: "points.supply_air_damper_percentage_command_85.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_85.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_85:
+      present_value: "points.supply_air_flowrate_setpoint_85.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_85.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_85:
+      present_value: "points.zone_air_temperature_sensor_85.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_85.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_85:
+      present_value: "points.supply_air_cooling_flowrate_capacity_85.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_85.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_85:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_85.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_85.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_85:
+      present_value: "points.supply_air_flowrate_sensor_85.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_85.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_85:
+      present_value: "points.zone_air_co2_concentration_sensor_85.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_85.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_85:
+      present_value: "points.zone_air_co2_concentration_setpoint_85.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_85.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_85:
+      present_value: "points.zone_air_cooling_temperature_setpoint_85.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_85.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_85:
+      present_value: "points.zone_occupancy_status_85.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_89:
+      present_value: "points.supply_air_damper_percentage_command_89.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_89.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_89:
+      present_value: "points.supply_air_flowrate_setpoint_89.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_89.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_89:
+      present_value: "points.zone_air_temperature_sensor_89.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_89.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_89:
+      present_value: "points.supply_air_cooling_flowrate_capacity_89.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_89.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_89:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_89.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_89.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_89:
+      present_value: "points.supply_air_flowrate_sensor_89.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_89.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_89:
+      present_value: "points.zone_air_co2_concentration_sensor_89.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_89.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_89:
+      present_value: "points.zone_air_co2_concentration_setpoint_89.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_89.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_89:
+      present_value: "points.zone_air_cooling_temperature_setpoint_89.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_89.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_89:
+      present_value: "points.zone_occupancy_status_89.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_87:
+      present_value: "points.supply_air_damper_percentage_command_87.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_87.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_87:
+      present_value: "points.supply_air_flowrate_setpoint_87.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_87.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_87:
+      present_value: "points.zone_air_temperature_sensor_87.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_87.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_87:
+      present_value: "points.supply_air_cooling_flowrate_capacity_87.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_87.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_87:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_87.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_87.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_87:
+      present_value: "points.supply_air_flowrate_sensor_87.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_87.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_87:
+      present_value: "points.zone_air_co2_concentration_sensor_87.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_87.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_87:
+      present_value: "points.zone_air_co2_concentration_setpoint_87.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_87.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_87:
+      present_value: "points.zone_air_cooling_temperature_setpoint_87.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_87.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_87:
+      present_value: "points.zone_occupancy_status_87.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_86:
+      present_value: "points.supply_air_damper_percentage_command_86.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_86.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_86:
+      present_value: "points.supply_air_flowrate_setpoint_86.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_86.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_86:
+      present_value: "points.zone_air_temperature_sensor_86.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_86.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_86:
+      present_value: "points.supply_air_cooling_flowrate_capacity_86.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_86.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_86:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_86.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_86.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_86:
+      present_value: "points.supply_air_flowrate_sensor_86.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_86.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_86:
+      present_value: "points.zone_air_co2_concentration_sensor_86.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_86.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_86:
+      present_value: "points.zone_air_co2_concentration_setpoint_86.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_86.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_86:
+      present_value: "points.zone_air_cooling_temperature_setpoint_86.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_86.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_86:
+      present_value: "points.zone_occupancy_status_86.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_68:
+      present_value: "points.supply_air_damper_percentage_command_68.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_68.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_68:
+      present_value: "points.supply_air_flowrate_setpoint_68.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_68.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_temperature_sensor_68:
+      present_value: "points.zone_air_temperature_sensor_68.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_68.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_68:
+      present_value: "points.supply_air_cooling_flowrate_capacity_68.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_68.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_68:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_68.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_68.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_68:
+      present_value: "points.supply_air_flowrate_sensor_68.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_68.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_68:
+      present_value: "points.zone_air_cooling_temperature_setpoint_68.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_68.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_68:
+      present_value: "points.zone_occupancy_status_68.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_co2_concentration_sensor_69:
+      present_value: "points.zone_air_co2_concentration_sensor_69.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_69.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_temperature_sensor_69:
+      present_value: "points.zone_air_temperature_sensor_69.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_69.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_69:
+      present_value: "points.supply_air_damper_percentage_command_69.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_69.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_69:
+      present_value: "points.supply_air_flowrate_setpoint_69.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_69.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_69:
+      present_value: "points.supply_air_cooling_flowrate_capacity_69.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_69.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_69:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_69.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_69.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_69:
+      present_value: "points.supply_air_flowrate_sensor_69.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_69.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_setpoint_69:
+      present_value: "points.zone_air_co2_concentration_setpoint_69.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_69.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_69:
+      present_value: "points.zone_air_cooling_temperature_setpoint_69.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_69.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_69:
+      present_value: "points.zone_occupancy_status_69.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_79:
+      present_value: "points.zone_air_temperature_sensor_79.present_value"
+      units:
+        key: "pointset.points.zone_air_temperature_sensor_79.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_79:
+      present_value: "points.supply_air_damper_percentage_command_79.present_value"
+      units:
+        key: "pointset.points.supply_air_damper_percentage_command_79.units"
+        values:
+          percent: percent
+    supply_air_flowrate_setpoint_79:
+      present_value: "points.supply_air_flowrate_setpoint_79.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_setpoint_79.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_cooling_flowrate_capacity_79:
+      present_value: "points.supply_air_cooling_flowrate_capacity_79.present_value"
+      units:
+        key: "pointset.points.supply_air_cooling_flowrate_capacity_79.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_79:
+      present_value: "points.supply_air_ventilation_flowrate_requirement_79.present_value"
+      units:
+        key: "pointset.points.supply_air_ventilation_flowrate_requirement_79.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_79:
+      present_value: "points.supply_air_flowrate_sensor_79.present_value"
+      units:
+        key: "pointset.points.supply_air_flowrate_sensor_79.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_79:
+      present_value: "points.zone_air_co2_concentration_sensor_79.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_sensor_79.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_79:
+      present_value: "points.zone_air_co2_concentration_setpoint_79.present_value"
+      units:
+        key: "pointset.points.zone_air_co2_concentration_setpoint_79.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_79:
+      present_value: "points.zone_air_cooling_temperature_setpoint_79.present_value"
+      units:
+        key: "pointset.points.zone_air_cooling_temperature_setpoint_79.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_79:
+      present_value: "points.zone_occupancy_status_79.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+  connections:
+    667b66e0-33f4-4a0c-91a4-73831babd0f2: CONTAINS
+  code: CGW-120203
+
+# Virtual Devices
+5cba96e6-18a2-411c-aa7f-1f0ae665d847:
+  type: HVAC/VAV_SD_CO2C
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_62
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_62
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_62
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_62
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_62
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_62
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_62
+  connections:
+    ? 
+    : CONTAINS
+  code: VAV-62
+628f1018-6e0b-4ac2-9ae9-e8016763937b:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_63
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_63
+      zone_air_temperature_sensor: zone_air_temperature_sensor_63
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_63
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_63
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_63
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_63
+      zone_occupancy_status: zone_occupancy_status_63
+  connections:
+    e01b64b5-b964-4fda-8591-da69f57a24f1: CONTAINS
+  code: VAV-63
+0592ba08-0f7f-4526-8493-3ef0d75be6db:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_64
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_64
+      zone_air_temperature_sensor: zone_air_temperature_sensor_64
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_64
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_64
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_64
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_64
+      zone_occupancy_status: zone_occupancy_status_64
+  connections:
+    9678a1b0-5ece-4a3e-a976-77a778ea677c: CONTAINS
+  code: VAV-64
+f28687bc-df35-4220-b188-295677be31e3:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_65
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_65
+      zone_air_temperature_sensor: zone_air_temperature_sensor_65
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_65
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_65
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_65
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_65
+      zone_occupancy_status: zone_occupancy_status_65
+  connections:
+    9e411a1d-eef6-4239-a482-82821bf86284: CONTAINS
+  code: VAV-65
+99a74270-41e9-417b-a0fa-34f41c9fa248:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_66
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_66
+      zone_air_temperature_sensor: zone_air_temperature_sensor_66
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_66
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_66
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_66
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_66
+      zone_occupancy_status: zone_occupancy_status_66
+  connections:
+    364b7e97-b391-4efc-b90c-4f3815616801: CONTAINS
+  code: VAV-66
+55bcdfc1-406c-4d81-aa12-4d6db3ad1051:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_70
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_70
+      zone_air_temperature_sensor: zone_air_temperature_sensor_70
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_70
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_70
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_70
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_70
+      zone_occupancy_status: zone_occupancy_status_70
+  connections:
+    04f8a865-5eb5-46ac-a300-00202aec38cc: CONTAINS
+  code: VAV-70
+225f7752-0332-4fd0-8fa8-b111cb136d0c:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_71
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_71
+      zone_air_temperature_sensor: zone_air_temperature_sensor_71
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_71
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_71
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_71
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_71
+      zone_occupancy_status: zone_occupancy_status_71
+  connections:
+    936e333d-bd7f-4165-9315-8b47166677f6: CONTAINS
+  code: VAV-71
+73ea0425-5ac4-45d2-b95e-21726ea5b2c7:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_73
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_73
+      zone_air_temperature_sensor: zone_air_temperature_sensor_73
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_73
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_73
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_73
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_73
+      zone_occupancy_status: zone_occupancy_status_73
+  connections:
+    cd7520a9-80c5-46c0-aaa8-f683594dca70: CONTAINS
+  code: VAV-73
+909830ad-ba54-4878-9c66-56a1049d891d:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_74
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_74
+      zone_air_temperature_sensor: zone_air_temperature_sensor_74
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_74
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_74
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_74
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_74
+      zone_occupancy_status: zone_occupancy_status_74
+  connections:
+    c3ff1404-26c3-45cd-99d1-9e43e371cf11: CONTAINS
+  code: VAV-74
+41e6dc6f-a2e3-4e35-b658-7833df670370:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_75
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_75
+      zone_air_temperature_sensor: zone_air_temperature_sensor_75
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_75
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_75
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_75
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_75
+      zone_occupancy_status: zone_occupancy_status_75
+  connections:
+    29b6e3ef-adfe-4a69-ae0f-66bcf9cf1c62: CONTAINS
+  code: VAV-75
+bd6af595-d44f-40c1-8199-cc70104e3408:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_76
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_76
+      zone_air_temperature_sensor: zone_air_temperature_sensor_76
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_76
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_76
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_76
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_76
+      zone_occupancy_status: zone_occupancy_status_76
+  connections:
+    db2dbbb0-30e0-4d1a-944b-362a39394f97: CONTAINS
+  code: VAV-76
+0721f56b-135e-4357-995b-6e3bc72068e8:
+  type: HVAC/VAV_SD_CSP
+  links:
+    3d04c0a9-6e75-4ca6-9796-c8165c5302c0:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_80
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_80
+      zone_air_temperature_sensor: zone_air_temperature_sensor_80
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_80
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_80
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_80
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_80
+      zone_occupancy_status: zone_occupancy_status_80
+  connections:
+    d454b1e4-df72-4045-a188-78847cda6597: CONTAINS
+  code: VAV-80
+15ed9398-5d70-4485-8268-186212aa7e33:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_83
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_83
+      zone_air_temperature_sensor: zone_air_temperature_sensor_83
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_83
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_83
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_83
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_83
+      zone_occupancy_status: zone_occupancy_status_83
+  connections:
+    042837c9-bd5f-488a-8707-a556da5b5431: CONTAINS
+  code: VAV-83
+db91b06f-c6f9-4519-adea-c73e8ca06448:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_84
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_84
+      zone_air_temperature_sensor: zone_air_temperature_sensor_84
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_84
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_84
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_84
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_84
+      zone_occupancy_status: zone_occupancy_status_84
+  connections:
+    042837c9-bd5f-488a-8707-a556da5b5431: CONTAINS
+  code: VAV-84
+726506fa-a99f-41bf-87c5-aafa63bc278a:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_82
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_82
+      zone_air_temperature_sensor: zone_air_temperature_sensor_82
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_82
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_82
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_82
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_82
+      zone_occupancy_status: zone_occupancy_status_82
+  connections:
+    85d680db-0e33-4d78-b7c9-ecf0e3841e15: CONTAINS
+  code: VAV-82
+55665574-e0ba-4721-ae87-cd9cc67a2a75:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_91
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_91
+      zone_air_temperature_sensor: zone_air_temperature_sensor_91
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_91
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_91
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_91
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_91
+      zone_occupancy_status: zone_occupancy_status_91
+  connections:
+    1aa16d9a-d3cd-40e0-9429-f14fc5c9d780: CONTAINS
+  code: VAV-91
+cdacd32b-b585-46c5-8203-ab26c0d99367:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_92
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_92
+      zone_air_temperature_sensor: zone_air_temperature_sensor_92
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_92
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_92
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_92
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_92
+      zone_occupancy_status: zone_occupancy_status_92
+  connections:
+    1e2ed1dc-d76c-4543-84bc-9db1e4debfbb: CONTAINS
+  code: VAV-92
+2317c8f9-08df-4e1e-91fe-c99e9cc403fa:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_72
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_72
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_72
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_72
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_72
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_72
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_72
+      zone_occupancy_status: zone_occupancy_status_72
+  connections:
+    41e0666b-cae9-446b-b2eb-74a9548cc6d7: CONTAINS
+  code: VAV-72
+a128caea-e0ac-41f7-8cfe-68baeb1465ee:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_78
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_78
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_78
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_78
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_78
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_78
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_78
+      zone_occupancy_status: zone_occupancy_status_78
+  connections:
+    b5357826-4b37-4e58-b76a-d05a8dd6c0e1: CONTAINS
+  code: VAV-78
+e7ae7f83-26d1-496b-b5b9-c74c51c1a511:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_77
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_77
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_77
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_77
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_77
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_77
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_77
+      zone_occupancy_status: zone_occupancy_status_77
+  connections:
+    c693e838-7f13-4886-b658-916ed342bddf: CONTAINS
+  code: VAV-77
+1c5e1792-7d4d-4d10-bc5f-93efe255182c:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_81
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_81
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_81
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_81
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_81
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_81
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_81
+      zone_occupancy_status: zone_occupancy_status_81
+  connections:
+    9f643450-0dea-4458-8fa0-5e54879a5eb4: CONTAINS
+  code: VAV-81
+ccd80d28-421a-4e64-a347-c77d0af81b7e:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_88
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_88
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_88
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_88
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_88
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_88
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_88
+      zone_occupancy_status: zone_occupancy_status_88
+  connections:
+    000857d9-0534-480b-9114-b5a44c5ec7bf: CONTAINS
+  code: VAV-88
+17340452-9e91-42f7-adda-7e878923bf47:
+  type: HVAC/VAV_SD_CSP
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_90
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_90
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_90
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_90
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_90
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_90
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_90
+      zone_occupancy_status: zone_occupancy_status_90
+  connections:
+    6e226430-bf11-4ca3-a4bb-b5a99615cb7a: CONTAINS
+  code: VAV-90
+7b4cf265-c2ef-4d01-8e3b-6ba7c10a0e1f:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    75102409-d354-4ad5-8904-6dcd60fcb0ec:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_67
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_67
+      zone_air_temperature_sensor: zone_air_temperature_sensor_67
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_67
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_67
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_67
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_67
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_67
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_67
+      zone_occupancy_status: zone_occupancy_status_67
+  connections:
+    5805082c-9a96-47ef-b4b4-33fc3720ffcd: CONTAINS
+  code: VAV-67
+ad7b9ee4-7913-4ec6-b2d3-64c96d278496:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_85
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_85
+      zone_air_temperature_sensor: zone_air_temperature_sensor_85
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_85
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_85
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_85
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_85
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_85
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_85
+      zone_occupancy_status: zone_occupancy_status_85
+  connections:
+    b7f5572c-ea81-4827-8660-ac2cfd00af20: CONTAINS
+  code: VAV-85
+3886dfc7-943f-436f-bcb0-2b0505ac32be:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_89
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_89
+      zone_air_temperature_sensor: zone_air_temperature_sensor_89
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_89
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_89
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_89
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_89
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_89
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_89
+      zone_occupancy_status: zone_occupancy_status_89
+  connections:
+    47510042-9632-4d30-b49d-9f73c022929e: CONTAINS
+  code: VAV-89
+d60b8777-b4d1-4678-b8fb-d6a8a4790ac3:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_87
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_87
+      zone_air_temperature_sensor: zone_air_temperature_sensor_87
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_87
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_87
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_87
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_87
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_87
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_87
+      zone_occupancy_status: zone_occupancy_status_87
+  connections:
+    bf638b75-0c80-4cb7-8145-bff7f5dc653a: CONTAINS
+  code: VAV-87
+ea118fb9-5deb-44f0-9d1a-f53412ae434a:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_86
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_86
+      zone_air_temperature_sensor: zone_air_temperature_sensor_86
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_86
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_86
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_86
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_86
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_86
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_86
+      zone_occupancy_status: zone_occupancy_status_86
+  connections:
+    d2090dcd-18bb-4a7a-88ad-f72d59d1018b: CONTAINS
+  code: VAV-86
+33a7f91d-73e3-475d-9ddc-aa84cc2ad565:
+  type: HVAC/VAV_SD_CSP
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_68
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_68
+      zone_air_temperature_sensor: zone_air_temperature_sensor_68
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_68
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_68
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_68
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_68
+      zone_occupancy_status: zone_occupancy_status_68
+  connections:
+    bce4681e-0fa2-42e5-8856-6914d81ce8d3: CONTAINS
+  code: VAV-68
+33d428b1-bfbf-4399-8ca9-a53464ca5b0e:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_69
+      zone_air_temperature_sensor: zone_air_temperature_sensor_69
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_69
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_69
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_69
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_69
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_69
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_69
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_69
+      zone_occupancy_status: zone_occupancy_status_69
+  connections:
+    5671a80b-7d85-4c31-b839-b77bb067ec61: CONTAINS
+  code: VAV-69
+ac3d5d90-0b52-4024-b015-617f11c7c701:
+  type: HVAC/VAV_SD_CSP_CO2C
+  links:
+    bd6721bb-dde6-4b6e-95bb-f2589f43416d:
+      zone_air_temperature_sensor: zone_air_temperature_sensor_79
+      supply_air_damper_percentage_command: supply_air_damper_percentage_command_79
+      supply_air_flowrate_setpoint: supply_air_flowrate_setpoint_79
+      supply_air_cooling_flowrate_capacity: supply_air_cooling_flowrate_capacity_79
+      supply_air_ventilation_flowrate_requirement: supply_air_ventilation_flowrate_requirement_79
+      supply_air_flowrate_sensor: supply_air_flowrate_sensor_79
+      zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_79
+      zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_79
+      zone_air_cooling_temperature_setpoint: zone_air_cooling_temperature_setpoint_79
+      zone_occupancy_status: zone_occupancy_status_79
+  connections:
+    d0ad6078-c25e-40f9-af04-01623df0a3db: CONTAINS
+  code: VAV-79
+

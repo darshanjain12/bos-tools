@@ -39,6 +39,7 @@ class DBOFiles:
     DEVICE_ID = "udmi.physical_tag.asset.guid"
     CONNECTION_FEEDS = "dbo.connections.feeds"
     CONNECTION_CONTROLS = "dbo.connections.controls"
+    CONNECTION_CONTAINS = "dbo.connections.contains"
     POINTSET_POINTS = "udmi.pointset.points"
     POINTS_TYPE = "points_type"
     TRANSLATION_FIELDS = "dbo.translation.fields"

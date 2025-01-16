@@ -1,0 +1,23 @@
+# Heading
+CONFIG_METADATA:
+  operation: INITIALIZE
+
+# Building
+d9fd1270-218c-4998-ab93-c7be5bd22f31:
+  type: FACILITIES/BUILDING
+  code: IN-BLR-ANANTA
+
+# Floor
+28ed1456-9605-452d-8caf-164ddc4a7081:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-2
+
+# Rooms
+ece78ab4-747d-42f3-8594-6081c1481319:
+  type: FACILITIES/ROOM
+  connections:
+    28ed1456-9605-452d-8caf-164ddc4a7081: CONTAINS
+  code: IN-BLR-ANANTA-2-1ELECRM
+

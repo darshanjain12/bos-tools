@@ -1,0 +1,1875 @@
+# Heading
+CONFIG_METADATA:
+  operation: INITIALIZE
+
+# Building
+d9fd1270-218c-4998-ab93-c7be5bd22f31:
+  type: FACILITIES/BUILDING
+  code: IN-BLR-ANANTA
+
+# Floor
+28ed1456-9605-452d-8caf-164ddc4a7081:
+  type: FACILITIES/FLOOR
+  connections:
+    d9fd1270-218c-4998-ab93-c7be5bd22f31: CONTAINS
+  code: IN-BLR-ANANTA-2
+
+# Rooms
+ece78ab4-747d-42f3-8594-6081c1481319:
+  type: FACILITIES/ROOM
+  connections:
+    28ed1456-9605-452d-8caf-164ddc4a7081: CONTAINS
+  code: IN-BLR-ANANTA-2-1ELECRM
+
+# Devices
+0a83e823-f9f8-4c08-83ce-1805a08c83fc:
+  type: GATEWAYS/PASSTHROUGH
+  cloud_device_id: 12348778778
+  connections:
+    28ed1456-9605-452d-8caf-164ddc4a7081: CONTAINS
+  code: HLI-18
+0f77a620-996f-493b-92e4-92858304eabc:
+  type: 
+  cloud_device_id: 12348778798
+  translation:
+    supply_air_damper_percentage_command_216:
+      present_value: "points.vav_216_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_216_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    supply_air_cooling_flowrate_capacity_216:
+      present_value: "points.vav_216_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_216_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_216:
+      present_value: "points.vav_216_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_216_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_216:
+      present_value: "points.vav_216_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_216_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_216:
+      present_value: "points.vav_216_zone_air_co2_concentration_sensor.present_value"
+      units:
+        key: "pointset.points.vav_216_zone_air_co2_concentration_sensor.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_216:
+      present_value: "points.vav_216_zone_air_co2_concentration_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_216_zone_air_co2_concentration_setpoint.units"
+        values:
+          parts_per_million: parts_per_million
+    supply_air_damper_percentage_command_217:
+      present_value: "points.vav_217_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_217_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_217:
+      present_value: "points.vav_217_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_217_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_217:
+      present_value: "points.vav_217_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_217_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_217:
+      present_value: "points.vav_217_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_217_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_217:
+      present_value: "points.vav_217_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_217_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_217:
+      present_value: "points.vav_217_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_217_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_217:
+      present_value: "points.vav_217_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_220:
+      present_value: "points.vav_220_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_220_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_220:
+      present_value: "points.vav_220_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_220_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_220:
+      present_value: "points.vav_220_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_220_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_220:
+      present_value: "points.vav_220_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_220_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_220:
+      present_value: "points.vav_220_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_220_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_220:
+      present_value: "points.vav_220_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_220_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_220:
+      present_value: "points.vav_220_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_222:
+      present_value: "points.vav_222_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_222_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_222:
+      present_value: "points.vav_222_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_222_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_222:
+      present_value: "points.vav_222_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_222_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_222:
+      present_value: "points.vav_222_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_222_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_222:
+      present_value: "points.vav_222_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_222_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_222:
+      present_value: "points.vav_222_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_222_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_222:
+      present_value: "points.vav_222_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_225:
+      present_value: "points.vav_225_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_225_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_225:
+      present_value: "points.vav_225_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_225_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_225:
+      present_value: "points.vav_225_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_225_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_225:
+      present_value: "points.vav_225_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_225_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_225:
+      present_value: "points.vav_225_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_225_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_225:
+      present_value: "points.vav_225_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_225_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_225:
+      present_value: "points.vav_225_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_226:
+      present_value: "points.vav_226_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_226_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_226:
+      present_value: "points.vav_226_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_226_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_226:
+      present_value: "points.vav_226_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_226_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_226:
+      present_value: "points.vav_226_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_226_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_226:
+      present_value: "points.vav_226_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_226_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_226:
+      present_value: "points.vav_226_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_226_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_226:
+      present_value: "points.vav_226_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_227:
+      present_value: "points.vav_227_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_227_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_227:
+      present_value: "points.vav_227_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_227_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_227:
+      present_value: "points.vav_227_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_227_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_227:
+      present_value: "points.vav_227_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_227_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_227:
+      present_value: "points.vav_227_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_227_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_227:
+      present_value: "points.vav_227_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_227_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_227:
+      present_value: "points.vav_227_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_228:
+      present_value: "points.vav_228_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_228_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_228:
+      present_value: "points.vav_228_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_228_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_228:
+      present_value: "points.vav_228_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_228_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_228:
+      present_value: "points.vav_228_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_228_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_228:
+      present_value: "points.vav_228_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_228_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_228:
+      present_value: "points.vav_228_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_228_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_228:
+      present_value: "points.vav_228_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_229:
+      present_value: "points.vav_229_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_229_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_229:
+      present_value: "points.vav_229_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_229_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_229:
+      present_value: "points.vav_229_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_229_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_229:
+      present_value: "points.vav_229_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_229_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_229:
+      present_value: "points.vav_229_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_229_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_229:
+      present_value: "points.vav_229_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_229_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_229:
+      present_value: "points.vav_229_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_232:
+      present_value: "points.vav_232_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_232_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_232:
+      present_value: "points.vav_232_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_232_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_232:
+      present_value: "points.vav_232_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_232_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_232:
+      present_value: "points.vav_232_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_232_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_232:
+      present_value: "points.vav_232_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_232_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_232:
+      present_value: "points.vav_232_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_232_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_232:
+      present_value: "points.vav_232_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_233:
+      present_value: "points.vav_233_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_233_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_233:
+      present_value: "points.vav_233_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_233_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_233:
+      present_value: "points.vav_233_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_233_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_233:
+      present_value: "points.vav_233_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_233_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_233:
+      present_value: "points.vav_233_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_233_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_233:
+      present_value: "points.vav_233_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_233_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_233:
+      present_value: "points.vav_233_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_221:
+      present_value: "points.vav_221_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_221_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_221:
+      present_value: "points.vav_221_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_221_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    supply_air_cooling_flowrate_capacity_221:
+      present_value: "points.vav_221_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_221_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_221:
+      present_value: "points.vav_221_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_221_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_221:
+      present_value: "points.vav_221_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_221_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_221:
+      present_value: "points.vav_221_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_221_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_221:
+      present_value: "points.vav_221_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_230:
+      present_value: "points.vav_230_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_230_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_230:
+      present_value: "points.vav_230_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_230_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    supply_air_cooling_flowrate_capacity_230:
+      present_value: "points.vav_230_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_230_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_230:
+      present_value: "points.vav_230_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_230_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_230:
+      present_value: "points.vav_230_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_230_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_230:
+      present_value: "points.vav_230_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_230_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_230:
+      present_value: "points.vav_230_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    zone_air_temperature_sensor_231:
+      present_value: "points.vav_231_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_231_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_damper_percentage_command_231:
+      present_value: "points.vav_231_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_231_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    supply_air_cooling_flowrate_capacity_231:
+      present_value: "points.vav_231_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_231_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_231:
+      present_value: "points.vav_231_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_231_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_231:
+      present_value: "points.vav_231_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_231_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_cooling_temperature_setpoint_231:
+      present_value: "points.vav_231_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_231_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_231:
+      present_value: "points.vav_231_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_223:
+      present_value: "points.vav_223_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_223_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_223:
+      present_value: "points.vav_223_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_223_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_223:
+      present_value: "points.vav_223_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_223_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_223:
+      present_value: "points.vav_223_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_223_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_223:
+      present_value: "points.vav_223_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_223_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_223:
+      present_value: "points.vav_223_zone_air_co2_concentration_sensor.present_value"
+      units:
+        key: "pointset.points.vav_223_zone_air_co2_concentration_sensor.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_223:
+      present_value: "points.vav_223_zone_air_co2_concentration_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_223_zone_air_co2_concentration_setpoint.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_223:
+      present_value: "points.vav_223_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_223_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_223:
+      present_value: "points.vav_223_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_damper_percentage_command_224:
+      present_value: "points.vav_224_supply_air_damper_percentage_command.present_value"
+      units:
+        key: "pointset.points.vav_224_supply_air_damper_percentage_command.units"
+        values:
+          percent: percent
+    zone_air_temperature_sensor_224:
+      present_value: "points.vav_224_zone_air_temperature_sensor.present_value"
+      units:
+        key: "pointset.points.vav_224_zone_air_temperature_sensor.units"
+        values:
+          degrees_celsius: degrees_celsius
+    supply_air_cooling_flowrate_capacity_224:
+      present_value: "points.vav_224_supply_air_cooling_flowrate_capacity.present_value"
+      units:
+        key: "pointset.points.vav_224_supply_air_cooling_flowrate_capacity.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_ventilation_flowrate_requirement_224:
+      present_value: "points.vav_224_supply_air_ventilation_flowrate_requirement.present_value"
+      units:
+        key: "pointset.points.vav_224_supply_air_ventilation_flowrate_requirement.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_sensor_224:
+      present_value: "points.vav_224_supply_air_flowrate_sensor.present_value"
+      units:
+        key: "pointset.points.vav_224_supply_air_flowrate_sensor.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    zone_air_co2_concentration_sensor_224:
+      present_value: "points.vav_224_zone_air_co2_concentration_sensor.present_value"
+      units:
+        key: "pointset.points.vav_224_zone_air_co2_concentration_sensor.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_co2_concentration_setpoint_224:
+      present_value: "points.vav_224_zone_air_co2_concentration_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_224_zone_air_co2_concentration_setpoint.units"
+        values:
+          parts_per_million: parts_per_million
+    zone_air_cooling_temperature_setpoint_224:
+      present_value: "points.vav_224_zone_air_cooling_temperature_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_224_zone_air_cooling_temperature_setpoint.units"
+        values:
+          degrees_celsius: degrees_celsius
+    zone_occupancy_status_224:
+      present_value: "points.vav_224_zone_occupancy_status.present_value"
+      states:
+        OCCUPIED: "1"
+        UNOCCUPIED: "0"
+    supply_air_flowrate_setpoint_216:
+      present_value: "points.vav_216_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_216_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_217:
+      present_value: "points.vav_217_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_217_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_220:
+      present_value: "points.vav_220_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_220_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_221:
+      present_value: "points.vav_221_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_221_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_222:
+      present_value: "points.vav_222_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_222_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_223:
+      present_value: "points.vav_223_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_223_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_224:
+      present_value: "points.vav_224_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_224_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_225:
+      present_value: "points.vav_225_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_225_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_226:
+      present_value: "points.vav_226_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_226_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_227:
+      present_value: "points.vav_227_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_227_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_228:
+      present_value: "points.vav_228_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_228_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_229:
+      present_value: "points.vav_229_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_229_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_230:
+      present_value: "points.vav_230_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_230_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_231:
+      present_value: "points.vav_231_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_231_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_232:
+      present_value: "points.vav_232_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_232_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+    supply_air_flowrate_setpoint_233:
+      present_value: "points.vav_233_supply_air_flowrate_setpoint.present_value"
+      units:
+        key: "pointset.points.vav_233_supply_air_flowrate_setpoint.units"
+        values:
+          cubic_feet_per_minute: cubic_feet_per_minute
+  connections:
+    28ed1456-9605-452d-8caf-164ddc4a7081: CONTAINS
+  code: GATVAV-18
+d4f53cc2-dcb2-4707-b748-729da4e0b759:
+  type: METERS/EM_PWM_PLPM_PVCM
+  cloud_device_id: 12348779778
+  translation:
+    energy_accumulator_21:
+      present_value: "points.em_21_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_21_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_21:
+      present_value: "points.em_21_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase1_power_sensor_21:
+      present_value: "points.em_21_phase1_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase2_power_sensor_21:
+      present_value: "points.em_21_phase2_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase2_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase3_power_sensor_21:
+      present_value: "points.em_21_phase3_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase3_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    apparent_power_sensor_21:
+      present_value: "points.em_21_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase1_apparent_power_sensor_21:
+      present_value: "points.em_21_phase1_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase2_apparent_power_sensor_21:
+      present_value: "points.em_21_phase2_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase2_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase3_apparent_power_sensor_21:
+      present_value: "points.em_21_phase3_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase3_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    powerfactor_sensor_21:
+      present_value: "points.em_21_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    phase1_line_current_sensor_21:
+      present_value: "points.em_21_phase1_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase2_line_current_sensor_21:
+      present_value: "points.em_21_phase2_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase2_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase3_line_current_sensor_21:
+      present_value: "points.em_21_phase3_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase3_line_current_sensor.units"
+        values:
+          amperes: amperes
+    line_frequency_sensor_21:
+      present_value: "points.em_21_line_frequency_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_line_frequency_sensor.units"
+        values:
+          frequency: frequency
+    reactive_power_sensor_21:
+      present_value: "points.em_21_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_reactive_power_sensor_21:
+      present_value: "points.em_21_phase1_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase2_reactive_power_sensor_21:
+      present_value: "points.em_21_phase2_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase2_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase3_reactive_power_sensor_21:
+      present_value: "points.em_21_phase3_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase3_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_neutral_line_voltage_sensor_21:
+      present_value: "points.em_21_phase1_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_neutral_line_voltage_sensor_21:
+      present_value: "points.em_21_phase2_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase2_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase3_neutral_line_voltage_sensor_21:
+      present_value: "points.em_21_phase3_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase3_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase2_line_voltage_sensor_21:
+      present_value: "points.em_21_phase1_phase2_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_phase2_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_phase3_line_voltage_sensor_21:
+      present_value: "points.em_21_phase2_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase2_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase3_line_voltage_sensor_21:
+      present_value: "points.em_21_phase1_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_21_phase1_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    energy_accumulator_22:
+      present_value: "points.em_22_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_22_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_22:
+      present_value: "points.em_22_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase1_power_sensor_22:
+      present_value: "points.em_22_phase1_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase2_power_sensor_22:
+      present_value: "points.em_22_phase2_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase2_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase3_power_sensor_22:
+      present_value: "points.em_22_phase3_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase3_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    apparent_power_sensor_22:
+      present_value: "points.em_22_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase1_apparent_power_sensor_22:
+      present_value: "points.em_22_phase1_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase2_apparent_power_sensor_22:
+      present_value: "points.em_22_phase2_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase2_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase3_apparent_power_sensor_22:
+      present_value: "points.em_22_phase3_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase3_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    powerfactor_sensor_22:
+      present_value: "points.em_22_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    phase1_line_current_sensor_22:
+      present_value: "points.em_22_phase1_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase2_line_current_sensor_22:
+      present_value: "points.em_22_phase2_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase2_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase3_line_current_sensor_22:
+      present_value: "points.em_22_phase3_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase3_line_current_sensor.units"
+        values:
+          amperes: amperes
+    line_frequency_sensor_22:
+      present_value: "points.em_22_line_frequency_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_line_frequency_sensor.units"
+        values:
+          frequency: frequency
+    reactive_power_sensor_22:
+      present_value: "points.em_22_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_reactive_power_sensor_22:
+      present_value: "points.em_22_phase1_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase2_reactive_power_sensor_22:
+      present_value: "points.em_22_phase2_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase2_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase3_reactive_power_sensor_22:
+      present_value: "points.em_22_phase3_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase3_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_neutral_line_voltage_sensor_22:
+      present_value: "points.em_22_phase1_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_neutral_line_voltage_sensor_22:
+      present_value: "points.em_22_phase2_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase2_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase3_neutral_line_voltage_sensor_22:
+      present_value: "points.em_22_phase3_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase3_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase2_line_voltage_sensor_22:
+      present_value: "points.em_22_phase1_phase2_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_phase2_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_phase3_line_voltage_sensor_22:
+      present_value: "points.em_22_phase2_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase2_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase3_line_voltage_sensor_22:
+      present_value: "points.em_22_phase1_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_22_phase1_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    energy_accumulator_23:
+      present_value: "points.em_23_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_23_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_23:
+      present_value: "points.em_23_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase1_power_sensor_23:
+      present_value: "points.em_23_phase1_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase2_power_sensor_23:
+      present_value: "points.em_23_phase2_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase2_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase3_power_sensor_23:
+      present_value: "points.em_23_phase3_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase3_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    apparent_power_sensor_23:
+      present_value: "points.em_23_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase1_apparent_power_sensor_23:
+      present_value: "points.em_23_phase1_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase2_apparent_power_sensor_23:
+      present_value: "points.em_23_phase2_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase2_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase3_apparent_power_sensor_23:
+      present_value: "points.em_23_phase3_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase3_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    powerfactor_sensor_23:
+      present_value: "points.em_23_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    phase1_line_current_sensor_23:
+      present_value: "points.em_23_phase1_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase2_line_current_sensor_23:
+      present_value: "points.em_23_phase2_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase2_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase3_line_current_sensor_23:
+      present_value: "points.em_23_phase3_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase3_line_current_sensor.units"
+        values:
+          amperes: amperes
+    line_frequency_sensor_23:
+      present_value: "points.em_23_line_frequency_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_line_frequency_sensor.units"
+        values:
+          frequency: frequency
+    reactive_power_sensor_23:
+      present_value: "points.em_23_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_reactive_power_sensor_23:
+      present_value: "points.em_23_phase1_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase2_reactive_power_sensor_23:
+      present_value: "points.em_23_phase2_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase2_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase3_reactive_power_sensor_23:
+      present_value: "points.em_23_phase3_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase3_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_neutral_line_voltage_sensor_23:
+      present_value: "points.em_23_phase1_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_neutral_line_voltage_sensor_23:
+      present_value: "points.em_23_phase2_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase2_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase3_neutral_line_voltage_sensor_23:
+      present_value: "points.em_23_phase3_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase3_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase2_line_voltage_sensor_23:
+      present_value: "points.em_23_phase1_phase2_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_phase2_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_phase3_line_voltage_sensor_23:
+      present_value: "points.em_23_phase2_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase2_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase3_line_voltage_sensor_23:
+      present_value: "points.em_23_phase1_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_23_phase1_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    energy_accumulator_24:
+      present_value: "points.em_24_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_24_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_24:
+      present_value: "points.em_24_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase1_power_sensor_24:
+      present_value: "points.em_24_phase1_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase2_power_sensor_24:
+      present_value: "points.em_24_phase2_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase2_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase3_power_sensor_24:
+      present_value: "points.em_24_phase3_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase3_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    apparent_power_sensor_24:
+      present_value: "points.em_24_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase1_apparent_power_sensor_24:
+      present_value: "points.em_24_phase1_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase2_apparent_power_sensor_24:
+      present_value: "points.em_24_phase2_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase2_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase3_apparent_power_sensor_24:
+      present_value: "points.em_24_phase3_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase3_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    powerfactor_sensor_24:
+      present_value: "points.em_24_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    phase1_line_current_sensor_24:
+      present_value: "points.em_24_phase1_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase2_line_current_sensor_24:
+      present_value: "points.em_24_phase2_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase2_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase3_line_current_sensor_24:
+      present_value: "points.em_24_phase3_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase3_line_current_sensor.units"
+        values:
+          amperes: amperes
+    line_frequency_sensor_24:
+      present_value: "points.em_24_line_frequency_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_line_frequency_sensor.units"
+        values:
+          frequency: frequency
+    reactive_power_sensor_24:
+      present_value: "points.em_24_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_reactive_power_sensor_24:
+      present_value: "points.em_24_phase1_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase2_reactive_power_sensor_24:
+      present_value: "points.em_24_phase2_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase2_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase3_reactive_power_sensor_24:
+      present_value: "points.em_24_phase3_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase3_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_neutral_line_voltage_sensor_24:
+      present_value: "points.em_24_phase1_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_neutral_line_voltage_sensor_24:
+      present_value: "points.em_24_phase2_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase2_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase3_neutral_line_voltage_sensor_24:
+      present_value: "points.em_24_phase3_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase3_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase2_line_voltage_sensor_24:
+      present_value: "points.em_24_phase1_phase2_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_phase2_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_phase3_line_voltage_sensor_24:
+      present_value: "points.em_24_phase2_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase2_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase3_line_voltage_sensor_24:
+      present_value: "points.em_24_phase1_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_24_phase1_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    energy_accumulator_25:
+      present_value: "points.em_25_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_25_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_25:
+      present_value: "points.em_25_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase1_power_sensor_25:
+      present_value: "points.em_25_phase1_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase2_power_sensor_25:
+      present_value: "points.em_25_phase2_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase2_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase3_power_sensor_25:
+      present_value: "points.em_25_phase3_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase3_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    apparent_power_sensor_25:
+      present_value: "points.em_25_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase1_apparent_power_sensor_25:
+      present_value: "points.em_25_phase1_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase2_apparent_power_sensor_25:
+      present_value: "points.em_25_phase2_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase2_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase3_apparent_power_sensor_25:
+      present_value: "points.em_25_phase3_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase3_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    powerfactor_sensor_25:
+      present_value: "points.em_25_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    phase1_line_current_sensor_25:
+      present_value: "points.em_25_phase1_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase2_line_current_sensor_25:
+      present_value: "points.em_25_phase2_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase2_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase3_line_current_sensor_25:
+      present_value: "points.em_25_phase3_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase3_line_current_sensor.units"
+        values:
+          amperes: amperes
+    line_frequency_sensor_25:
+      present_value: "points.em_25_line_frequency_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_line_frequency_sensor.units"
+        values:
+          frequency: frequency
+    reactive_power_sensor_25:
+      present_value: "points.em_25_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_reactive_power_sensor_25:
+      present_value: "points.em_25_phase1_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase2_reactive_power_sensor_25:
+      present_value: "points.em_25_phase2_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase2_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase3_reactive_power_sensor_25:
+      present_value: "points.em_25_phase3_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase3_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_neutral_line_voltage_sensor_25:
+      present_value: "points.em_25_phase1_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_neutral_line_voltage_sensor_25:
+      present_value: "points.em_25_phase2_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase2_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase3_neutral_line_voltage_sensor_25:
+      present_value: "points.em_25_phase3_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase3_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase2_line_voltage_sensor_25:
+      present_value: "points.em_25_phase1_phase2_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_phase2_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_phase3_line_voltage_sensor_25:
+      present_value: "points.em_25_phase2_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase2_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase3_line_voltage_sensor_25:
+      present_value: "points.em_25_phase1_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_25_phase1_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    energy_accumulator_26:
+      present_value: "points.em_26_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_26_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_26:
+      present_value: "points.em_26_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase1_power_sensor_26:
+      present_value: "points.em_26_phase1_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase2_power_sensor_26:
+      present_value: "points.em_26_phase2_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase2_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    phase3_power_sensor_26:
+      present_value: "points.em_26_phase3_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase3_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    apparent_power_sensor_26:
+      present_value: "points.em_26_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase1_apparent_power_sensor_26:
+      present_value: "points.em_26_phase1_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase2_apparent_power_sensor_26:
+      present_value: "points.em_26_phase2_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase2_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    phase3_apparent_power_sensor_26:
+      present_value: "points.em_26_phase3_apparent_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase3_apparent_power_sensor.units"
+        values:
+          kilovolt_amperes_apparent: kilovolt_amperes_apparent
+    powerfactor_sensor_26:
+      present_value: "points.em_26_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    phase1_line_current_sensor_26:
+      present_value: "points.em_26_phase1_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase2_line_current_sensor_26:
+      present_value: "points.em_26_phase2_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase2_line_current_sensor.units"
+        values:
+          amperes: amperes
+    phase3_line_current_sensor_26:
+      present_value: "points.em_26_phase3_line_current_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase3_line_current_sensor.units"
+        values:
+          amperes: amperes
+    line_frequency_sensor_26:
+      present_value: "points.em_26_line_frequency_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_line_frequency_sensor.units"
+        values:
+          frequency: frequency
+    reactive_power_sensor_26:
+      present_value: "points.em_26_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_reactive_power_sensor_26:
+      present_value: "points.em_26_phase1_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase2_reactive_power_sensor_26:
+      present_value: "points.em_26_phase2_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase2_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase3_reactive_power_sensor_26:
+      present_value: "points.em_26_phase3_reactive_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase3_reactive_power_sensor.units"
+        values:
+          kilovolt_amperes_reactive: kilovolt_amperes_reactive
+    phase1_neutral_line_voltage_sensor_26:
+      present_value: "points.em_26_phase1_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_neutral_line_voltage_sensor_26:
+      present_value: "points.em_26_phase2_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase2_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase3_neutral_line_voltage_sensor_26:
+      present_value: "points.em_26_phase3_neutral_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase3_neutral_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase2_line_voltage_sensor_26:
+      present_value: "points.em_26_phase1_phase2_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_phase2_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase2_phase3_line_voltage_sensor_26:
+      present_value: "points.em_26_phase2_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase2_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    phase1_phase3_line_voltage_sensor_26:
+      present_value: "points.em_26_phase1_phase3_line_voltage_sensor.present_value"
+      units:
+        key: "pointset.points.em_26_phase1_phase3_line_voltage_sensor.units"
+        values:
+          volts: volts
+    power_sensor_308:
+      present_value: "points.em_308_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_308_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    powerfactor_sensor_308:
+      present_value: "points.em_308_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_308_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    generator_energy_accumulator_308:
+      present_value: "points.em_308_generator_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_308_generator_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    electricalgrid_energy_accumulator_308:
+      present_value: "points.em_308_electricalgrid_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_308_electricalgrid_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    energy_accumulator_308:
+      present_value: "points.em_308_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_308_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_320:
+      present_value: "points.em_320_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_320_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    powerfactor_sensor_320:
+      present_value: "points.em_320_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_320_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    generator_energy_accumulator_320:
+      present_value: "points.em_320_generator_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_320_generator_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    electricalgrid_energy_accumulator_320:
+      present_value: "points.em_320_electricalgrid_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_320_electricalgrid_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    energy_accumulator_320:
+      present_value: "points.em_320_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_320_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_333:
+      present_value: "points.em_333_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_333_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    powerfactor_sensor_333:
+      present_value: "points.em_333_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_333_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    generator_energy_accumulator_333:
+      present_value: "points.em_333_generator_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_333_generator_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    electricalgrid_energy_accumulator_333:
+      present_value: "points.em_333_electricalgrid_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_333_electricalgrid_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    energy_accumulator_333:
+      present_value: "points.em_333_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_333_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_334:
+      present_value: "points.em_334_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_334_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    powerfactor_sensor_334:
+      present_value: "points.em_334_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_334_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    generator_energy_accumulator_334:
+      present_value: "points.em_334_generator_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_334_generator_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    electricalgrid_energy_accumulator_334:
+      present_value: "points.em_334_electricalgrid_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_334_electricalgrid_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    energy_accumulator_334:
+      present_value: "points.em_334_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_334_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_357:
+      present_value: "points.em_357_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_357_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    powerfactor_sensor_357:
+      present_value: "points.em_357_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_357_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    generator_energy_accumulator_357:
+      present_value: "points.em_357_generator_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_357_generator_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    electricalgrid_energy_accumulator_357:
+      present_value: "points.em_357_electricalgrid_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_357_electricalgrid_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    energy_accumulator_357:
+      present_value: "points.em_357_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_357_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    power_sensor_358:
+      present_value: "points.em_358_power_sensor.present_value"
+      units:
+        key: "pointset.points.em_358_power_sensor.units"
+        values:
+          kilowatts: kilowatts
+    powerfactor_sensor_358:
+      present_value: "points.em_358_powerfactor_sensor.present_value"
+      units:
+        key: "pointset.points.em_358_powerfactor_sensor.units"
+        values:
+          no_units: no_units
+    generator_energy_accumulator_358:
+      present_value: "points.em_358_generator_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_358_generator_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    electricalgrid_energy_accumulator_358:
+      present_value: "points.em_358_electricalgrid_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_358_electricalgrid_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+    energy_accumulator_358:
+      present_value: "points.em_358_energy_accumulator.present_value"
+      units:
+        key: "pointset.points.em_358_energy_accumulator.units"
+        values:
+          kilowatt_hours: kilowatt_hours
+  connections:
+    28ed1456-9605-452d-8caf-164ddc4a7081: CONTAINS
+  code: GATEM-18
+
+# Virtual Devices
+cc69dcf3-9f07-4827-9181-3157f5d64c41:
+  type: HVAC/VAV_SD_CSP
+  cloud_device_id: 
+  links:
+    0f77a620-996f-493b-92e4-92858304eabc:
+      vav_216_supply_air_damper_percentage_command: vav_216_supply_air_damper_percentage_command
+      vav_216_supply_air_cooling_flowrate_capacity: vav_216_supply_air_cooling_flowrate_capacity
+      vav_216_supply_air_ventilation_flowrate_requirement: vav_216_supply_air_ventilation_flowrate_requirement
+      vav_216_supply_air_flowrate_sensor: vav_216_supply_air_flowrate_sensor
+      vav_216_zone_air_co2_concentration_sensor: vav_216_zone_air_co2_concentration_sensor
+      vav_216_zone_air_co2_concentration_setpoint: vav_216_zone_air_co2_concentration_setpoint
+      vav_216_supply_air_flowrate_setpoint: vav_216_supply_air_flowrate_setpoint
+  code: VAV-216
+

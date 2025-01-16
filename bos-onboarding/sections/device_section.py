@@ -10,7 +10,7 @@
 import re
 import abc
 
-from building_blocks.device import Device
+from building_blocks.device import Device,Virtual_Device
 
 """
   Base class for the device section.
@@ -232,8 +232,64 @@ class DBOVirtualDeviceSection(DeviceSection):
     feeds = row[self._site_model_columns.CONNECTION_FEEDS]
     controls = row[self._site_model_columns.CONNECTION_CONTROLS]
 
+    b={}
+    for i in self._site_model_sheets.LOCATIONS:
+      b[i['dbo.entity_name']]=i['dbo.id']
+    
+    
+    c={}
+    #Creating seperate dictionary for all the asset.guid values from asset tab of excel
+    for i in self._site_model_sheets.ASSETS:
+      c[i['entity_instance_name']]=i['udmi.physical_tag.asset.guid']
+    
+    contains_value=[]
+    #Handling multiple values from dbo.connections.contains from asset tab of excel 
+    conn_contains = row[self._site_model_columns.CONNECTION_CONTAINS].split(',')
+    for j in conn_contains:
+      j=j.strip()
+      # Checking value present in entity name from dbo.id dictionary
+      if j in b :
+        
+        contains_value.append(b[j])
+
+      else:
+        contains_value=j
+
+    
+    contains_val=','.join(contains_value)
+
+    device.populate_connections(contains_val, "CONTAINS")
 
     if not feeds.isspace() and len(feeds) > 0:
+      feeds = self._get_devices_from_string(feeds)
+      feeds_conn=[]
+      for i in feeds:
+        i=i.strip()
+        # Checking values are present in system.section dictionary 
+        if i in c:
+          feeds_conn.append(c[i])
+        else:
+          feeds_conn=i
+
+      feeds_conn=','.join(feeds_conn)
+      device.populate_connections(feeds_conn, "FEEDS")
+
+    if not controls.isspace() and len(controls) > 0:
+      controls = self._get_devices_from_string(controls)
+      control_conn = []
+      for i in controls:
+        i=i.strip()
+        # Checking values are present in system.section dictionary 
+        if i in c:
+          control_conn.append(c[i])
+        else:
+          control_conn=i
+      
+      control_conn=','.join(control_conn)
+      device.populate_connections(control_conn, "CONTROLS")
+
+
+    '''if not feeds.isspace() and len(feeds) > 0:
       feeds = self._get_devices_from_string(feeds)
       for i in feeds:
         device.populate_connections(i, "FEEDS")
@@ -241,7 +297,7 @@ class DBOVirtualDeviceSection(DeviceSection):
     if not controls.isspace() and len(controls) > 0:
       controls = self._get_devices_from_string(controls)
       for i in controls:
-        device.populate_connections(i, "CONTROLS")
+        device.populate_connections(i, "CONTROLS")'''
 
   def _fill_device_links(self, row, device):
     linked_devices_string = row[self._site_model_columns.LINKS]
@@ -276,10 +332,11 @@ class DBOVirtualDeviceSection(DeviceSection):
     if row[self._site_model_columns.DEVICE_OR_VIRTUAL] == "Virtual":
       device_name = row[self._site_model_columns.INSTANCE_NAME]
       device_type = row[self._site_model_columns.DEVICE_TYPE]
-      cloud_device_id = row[self._site_model_columns.CLOUD_DEVICE_ID]
+      #cloud_device_id = row[self._site_model_columns.CLOUD_DEVICE_ID]
       #device_id = "CDM/" + row[self._site_model_columns.DEVICE_ID]
       device_id = row[self._site_model_columns.DEVICE_ID]
-      device = Device(device_name, device_type, device_id, cloud_device_id)
+      #device = Device(device_name, device_type, device_id, cloud_device_id)
+      device = Virtual_Device(device_name, device_type, device_id)
       self._fill_device_links(row, device)
       
       self._fill_device_connections(row, device)
