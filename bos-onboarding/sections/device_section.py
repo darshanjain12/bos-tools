@@ -231,10 +231,10 @@ class DBOVirtualDeviceSection(DeviceSection):
   def _fill_device_connections(self, row, device):
     feeds = row[self._site_model_columns.CONNECTION_FEEDS]
     controls = row[self._site_model_columns.CONNECTION_CONTROLS]
-
+    conn_contains1 = row[self._site_model_columns.CONNECTION_CONTAINS]
     conn_contains = row[self._site_model_columns.CONNECTION_CONTAINS].split(',')
     #Handling values 
-    if not ''.join(conn_contains).isspace() and len(conn_contains) > 0:
+    if not conn_contains1.isspace() and len(conn_contains1) > 0:
     # contains
       b={}
       for i in self._site_model_sheets.LOCATIONS:

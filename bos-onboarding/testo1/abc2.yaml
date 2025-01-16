@@ -2493,9 +2493,6 @@ bd6721bb-dde6-4b6e-95bb-f2589f43416d:
       supply_air_flowrate_sensor: supply_air_flowrate_sensor_62
       zone_air_co2_concentration_sensor: zone_air_co2_concentration_sensor_62
       zone_air_co2_concentration_setpoint: zone_air_co2_concentration_setpoint_62
-  connections:
-    ? 
-    : CONTAINS
   code: VAV-62
 628f1018-6e0b-4ac2-9ae9-e8016763937b:
   type: HVAC/VAV_SD_CSP
