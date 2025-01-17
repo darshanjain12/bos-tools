@@ -74,34 +74,37 @@ class DBODeviceSection(DeviceSection):
   def _fill_device_connections(self, row, device):
     feeds = row[self._site_model_columns.CONNECTION_FEEDS]
     controls = row[self._site_model_columns.CONNECTION_CONTROLS]
+    conn_contains1 = row[self._site_model_columns.CONNECTION_CONTAINS]
+    conn_contains = row[self._site_model_columns.CONNECTION_CONTAINS].split(',')
+    if not conn_contains1.isspace() and len(conn_contains1) > 0:
     #Creating seperate dictionary for all the dbo.id values from location tab of excel
-    b={}
-    for i in self._site_model_sheets.LOCATIONS:
-      b[i['dbo.entity_name']]=i['dbo.id']
+      b={}
+      for i in self._site_model_sheets.LOCATIONS:
+        b[i['dbo.entity_name']]=i['dbo.id']
     
     
-    c={}
+      c={}
     #Creating seperate dictionary for all the asset.guid values from asset tab of excel
-    for i in self._site_model_sheets.ASSETS:
-      c[i['entity_instance_name']]=i['udmi.physical_tag.asset.guid']
+      for i in self._site_model_sheets.ASSETS:
+        c[i['entity_instance_name']]=i['udmi.physical_tag.asset.guid']
     
-    contains_value=[]
+      contains_value=[]
     #Handling multiple values from location.section from asset tab of excel 
-    conn_contains = row[self._site_model_columns.SYSTEM_LOCATION].split(',')
-    for j in conn_contains:
-      j=j.strip()
+    
+      for j in conn_contains:
+        j=j.strip()
       # Checking value present in entity name from dbo.id dictionary
-      if j in b :
+        if j in b :
         
-        contains_value.append(b[j])
+          contains_value.append(b[j])
 
-      else:
-        contains_value=j
+        else:
+          contains_value=j
 
     
-    contains_val=','.join(contains_value)
+      contains_val=','.join(contains_value)
 
-    device.populate_connections(contains_val, "CONTAINS")
+      device.populate_connections(contains_val, "CONTAINS")
 
     if not feeds.isspace() and len(feeds) > 0:
       feeds = self._get_devices_from_string(feeds)
