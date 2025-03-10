@@ -24,10 +24,7 @@
   },
   "cloud":{
     "auth_type":"RS256_X509",
-    "connection_type":"GATEWAY",
-    "config":{
-      "static_file":"config.json"
-    }
+    "connection_type":"GATEWAY"
   },
   "gateway":{
     "proxy_ids":[
